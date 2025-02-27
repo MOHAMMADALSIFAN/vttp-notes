@@ -32,7 +32,7 @@ Generate services:
 export class AppModule { }
 ```
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0ODE1NjY0LC0xMTc4MTUzMDY0XX0=
+eyJoaXN0b3J5IjpbMTEzMzYwMzQ1OCw1MDQ4MTU2NjQsLTExNz
+gxNTMwNjRdfQ==
 -->
