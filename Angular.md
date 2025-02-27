@@ -18,7 +18,17 @@ Generate components:
 `ng g c [name]`
 
 Generate services:
-`ng g s [path/to/service`
+`ng g s [path/to/service]`
+
+## How it works
+```typescript
+@NgModule({
+	delcarations: [ AppComponent ],
+	imports: [ BrowserModule ],
+	exports: [ ]
+})
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTAzMjg1NiwtMTE3ODE1MzA2NF19
+eyJoaXN0b3J5IjpbLTE1OTM1Njk3ODcsLTExNzgxNTMwNjRdfQ
+==
 -->
