@@ -34,12 +34,15 @@ export class AppModule { }
 
 |Property |Purpose |
 |---------|--------|
+|declarations| make a component available within the module|
+|imports| make exported components from another module available within this module
+|exports| make components, among others, available 
 
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyMzcwMzYsNTA0ODE1NjY0LC0xMTc4MT
-UzMDY0XX0=
+eyJoaXN0b3J5IjpbLTM3NTUyMjY4OSw1MDQ4MTU2NjQsLTExNz
+gxNTMwNjRdfQ==
 -->
