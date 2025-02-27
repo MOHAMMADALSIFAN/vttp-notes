@@ -18,7 +18,7 @@ Generate components:
 `ng g c [name]`
 
 Generate services:
-`ng g s [path/to/service\`
+`ng g s [path/to/service`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzgxNTMwNjRdfQ==
+eyJoaXN0b3J5IjpbMTU4OTAzMjg1NiwtMTE3ODE1MzA2NF19
 -->
