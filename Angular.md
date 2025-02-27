@@ -31,8 +31,9 @@ Generate services:
 })
 export class AppModule { }
 ```
-
+| property | purpose|
+---------
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzYwMzQ1OCw1MDQ4MTU2NjQsLTExNz
-gxNTMwNjRdfQ==
+eyJoaXN0b3J5IjpbLTEzNTU2OTY0MzIsNTA0ODE1NjY0LC0xMT
+c4MTUzMDY0XX0=
 -->
