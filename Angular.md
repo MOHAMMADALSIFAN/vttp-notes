@@ -25,10 +25,12 @@ Generate services:
 @NgModule({
 	delcarations: [ AppComponent ],
 	imports: [ BrowserModule ],
-	exports: [ ]
+	exports: [ ],
+	providers: [ ],
+	bootstrap: [ AppComponent ]
 })
+export class AppModule { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM1Njk3ODcsLTExNzgxNTMwNjRdfQ
-==
+eyJoaXN0b3J5IjpbNzQ1NDMxMzgwLC0xMTc4MTUzMDY0XX0=
 -->
