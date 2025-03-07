@@ -255,9 +255,17 @@ this.form = this.fb.group({
 ```
 ### Checking form and form field validity
 Use `.valid` or `invalid` on `FormGroup` or `FormControl`
-e.g.
-- `form.get('email').valid 
+e.g. `form.get('email').valid`
+
+To check if a field has a specific type of error:
+`form.get('email').hasError('email')`
+
+### Error messages
+Conditional display:
+```html
+<
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjIwNDMwNywtNTg3NjE2NTY0LC0xNz
+eyJoaXN0b3J5IjpbLTMxOTA3NjczNSwtNTg3NjE2NTY0LC0xNz
 U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
