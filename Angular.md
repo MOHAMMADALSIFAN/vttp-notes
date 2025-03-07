@@ -65,8 +65,10 @@ export class AppModule { }
 	- Other component: `(subject)="ownMethodCall($event)`
 
 ## Directives
+*Examples: ngFor, ngIf, ngClass, ngSwitch*
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDMxMjYxMiwtNDg2MDM0MjksNTA0OD
+eyJoaXN0b3J5IjpbLTQwMDE5NTExMSwtNDg2MDM0MjksNTA0OD
 E1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
