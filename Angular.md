@@ -152,7 +152,15 @@ Updated syntax:
 *ngFor="let n of names | titlecase"
 {{ value | number: '1.1-3' | currency: 'SGD':'symbol-narrow' }}
 ```
+Examples:
+1. uppercase
+2. titlecase
+3. percent
+4. number (e.g. `number:'1.1-3'`)
+5. slice (e.g. `slice:1:3`)
+6. json
+7. keyvalue (iterate through an object,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0OTk0NDA4LDIxNDY3MjI4NTQsLTE1Nj
-IyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbMTk5NDk2ODE2MSwyMTQ2NzIyODU0LC0xNT
+YyMjcwMzI4XX0=
 -->
