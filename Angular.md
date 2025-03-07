@@ -196,9 +196,21 @@ ngOnInit() {
 	
 	<tbody>
 		<tr>
-			<td> <input type="date"
+			<td> <input type="date"> </td>
+			<td> <input type="text"> </td>
+		</tr>
+	</tbody>
+</form>
+```
+```ts
+form: FormGroup;
+array: FormArray;
+
+ngOnInit() {
+	this.array = this.fb.array([]);
+	this.form = this.fb.group({t
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDc4NzE4MSwtMTc1NzY5NjM4LDIxND
+eyJoaXN0b3J5IjpbLTIyMDU3MzU1MiwtMTc1NzY5NjM4LDIxND
 Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
