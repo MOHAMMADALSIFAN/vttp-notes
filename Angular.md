@@ -96,7 +96,19 @@ Angular's new flow control:
 }
 ```
 
+**`ngFor` -- Loops**
+```html
+<ul>
+	<li *ngFor="let item of cart; let i = index;">
+		{{item}}
+	</li>
+</ul>
+```
+
+```html
+@for (t of texts;
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzM0Mjc0OCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbOTIxNTQ5NTM0LC0xNTYyMjcwMzI4XX0=
 -->
