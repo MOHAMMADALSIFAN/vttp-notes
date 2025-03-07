@@ -127,11 +127,25 @@ update(event) {
 <div [ngSwitch]="selected">
 	<div *ngSwitchCase="a">...</div>
 	<div *ngSwitchCase="b">...</div>
-	<div *ngSwitch
+	<div *ngSwitchDefault>...for no match...</div>
 </div>
 ```
 
+Updated syntax:
+```ts
+@switch(condition) {
+	@case (caseA) {
+		Case A.
+	}
+	@case (caseB) {
+		Case B.
+	}
+	@default {
+		Default case.
+	}
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODk4MTExOSwyMTQ2NzIyODU0LC0xNT
+eyJoaXN0b3J5IjpbLTQxNjgwMTQzNiwyMTQ2NzIyODU0LC0xNT
 YyMjcwMzI4XX0=
 -->
