@@ -52,9 +52,14 @@ export class AppModule { }
 ### Between components
 - Use `@Input()` to push in data.
 	- Other component: `[property]="some value"`
+```typescript
+@Input(
+	
+```
 - Use `@Output()` along with `new Subject<type>()` to send out data. 
 	- Other component: `(subject)="ownMethodCall($event)`
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM4NzUyMjMsLTQ4NjAzNDI5LDUwND
-gxNTY2NCwtMTE3ODE1MzA2NF19
+eyJoaXN0b3J5IjpbMTI1NTE5NjQ0MiwtNDg2MDM0MjksNTA0OD
+E1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
