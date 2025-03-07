@@ -288,10 +288,9 @@ const nonWhitespace = (ctrl: AbstractControl) => {
 	if (ctrl.value.trim().length > 0)
 		return (null) //return null if there is no error
 	return {nonWhitespace: true} as ValidationErrors
-	// return an object indica
+	// return an object indicating what errors have occurred
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjkxODIwNCwtNTg3NjE2NTY0LC0xNz
-U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbOTA5NDE0NTc4XX0=
 -->
