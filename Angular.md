@@ -70,10 +70,13 @@ export class AppModule { }
 **`ngClass` for conditional styling**
 ```html
 <input type="text" [disabled]="isDisabled"
-	[ngClass]="{ 'grey-border': isDi
+	[ngClass]="{ 'grey-border': isDisabled, 
+		'blue-border': !isDisabled }">
+
+<td [ngClass]="val > 10 ? 'red' : 'green'">{{ val}}</td>
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Njk1MTEzLC00MDAxOTUxMTEsLTQ4Nj
-AzNDI5LDUwNDgxNTY2NCwtMTE3ODE1MzA2NF19
+eyJoaXN0b3J5IjpbNzQ0NjY0NDQsLTQwMDE5NTExMSwtNDg2MD
+M0MjksNTA0ODE1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
