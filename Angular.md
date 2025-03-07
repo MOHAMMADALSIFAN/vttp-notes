@@ -283,8 +283,15 @@ protected isControlValid(field: string): boolean {
 }
 ```
 ## Custom validators
-
+```ts
+const nonWhitespace = (ctrl: AbstractControl) => {
+	if (ctrl.value.trim().length > 0)
+		return (null) //return null if there is no error
+	return {nonWhitespace: true} as ValidationErrors
+	// return an object indica
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjAxODg1LC01ODc2MTY1NjQsLTE3NT
-c2OTYzOCwyMTQ2NzIyODU0LC0xNTYyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbLTc5NjkxODIwNCwtNTg3NjE2NTY0LC0xNz
+U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
