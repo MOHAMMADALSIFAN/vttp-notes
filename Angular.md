@@ -208,9 +208,19 @@ array: FormArray;
 
 ngOnInit() {
 	this.array = this.fb.array([]);
-	this.form = this.fb.group({t
+	this.form = this.fb.group({todos: this.array })
+}
+
+
+addNewRow() {
+	const rowGroup = this.fb.group({
+		date: this.fb.control<Date>(new Date()),
+		description: this.fb.control<string>('')
+	})
+	this.array.push(rowGrop);
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMDU3MzU1MiwtMTc1NzY5NjM4LDIxND
+eyJoaXN0b3J5IjpbMTE2MjY1NzczMywtMTc1NzY5NjM4LDIxND
 Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
