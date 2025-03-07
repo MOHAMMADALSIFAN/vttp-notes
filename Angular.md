@@ -112,9 +112,18 @@ Angular's new flow control:
 
 **`ngSwitch` -- Multi condition**
 ```ts
+selected: string;
 
+update(event) {
+	this.selected = event.target.value;
+}
+```
+```html
+<select (change)="update($event)">
+	<option 
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MzU4NTk4MCwyMTQ2NzIyODU0LC0xNT
+eyJoaXN0b3J5IjpbLTIzMDI5MDY4NCwyMTQ2NzIyODU0LC0xNT
 YyMjcwMzI4XX0=
 -->
