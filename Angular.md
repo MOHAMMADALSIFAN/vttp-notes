@@ -190,8 +190,15 @@ ngOnInit() {
 ```
 
 ## Dynamic addition of array
-
+```html
+<form (submit)="processForm()">
+	<button type="button">Add</button>
+	
+	<tbody>
+		<tr>
+			<td> <input type="date"
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NjE0ODQzMCwtMTc1NzY5NjM4LDIxND
+eyJoaXN0b3J5IjpbLTYyNDc4NzE4MSwtMTc1NzY5NjM4LDIxND
 Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
