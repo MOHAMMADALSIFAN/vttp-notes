@@ -77,10 +77,14 @@ export class AppModule { }
 ```
 
 **`ngIf` -- Conditional Display**
-```html
-<div *ngIf="cart.length 
+```ts
+<div *ngIf="cart.length > 0"; else emptyCart>
+	Your cart has {{cart.length}} item(s).
+</div>
+
+<ng-temp
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTgwODcxLC00MDAxOTUxMTEsLTQ4Nj
+eyJoaXN0b3J5IjpbMTA3NjM0NjE2LC00MDAxOTUxMTEsLTQ4Nj
 AzNDI5LDUwNDgxNTY2NCwtMTE3ODE1MzA2NF19
 -->
