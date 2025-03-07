@@ -161,7 +161,10 @@ Examples:
 6. json
 7. keyvalue (iterate through an object, and access properties using `ele.key` and `ele.value`
 8. i18nselect (e.g. `{{ gender | i18nselect: {'male': 'him', 'female': 'her', ...}}`
+
+# Forms
+Add `ReactiveFormsModule` into the module imports. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTc2OTYzOCwyMTQ2NzIyODU0LC0xNT
-YyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbLTIxNDI0MjExODQsLTE3NTc2OTYzOCwyMT
+Q2NzIyODU0LC0xNTYyMjcwMzI4XX0=
 -->
