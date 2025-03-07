@@ -221,7 +221,14 @@ addNewRow() {
 	this.array.push(rowGrop);
 }
 ```
+
+## Reading form values and data
+```ts
+const data = this.form.value as RSVP 
+// use whatever model the form maps to
+```
+Variable names in the form and the model need to be the same to automatically map values. Otherwise, need to do manual mapp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzU2ODc0MzcsLTU4NzYxNjU2NCwtMT
+eyJoaXN0b3J5IjpbLTE1NTAxMjUwNzAsLTU4NzYxNjU2NCwtMT
 c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
