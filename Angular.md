@@ -120,10 +120,18 @@ update(event) {
 ```
 ```html
 <select (change)="update($event)">
-	<option 
+	<option *ngFor="d of deals" [value]="d">{{d}}</option>
+</select>
+...
+
+<div [ngSwitch]="selected">
+	<div *ngSwitchCase="a">...</div>
+	<div *ngSwitchCase="b">...</div>
+	<div *ngSwitch
+</div>
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDI5MDY4NCwyMTQ2NzIyODU0LC0xNT
+eyJoaXN0b3J5IjpbMTI4ODk4MTExOSwyMTQ2NzIyODU0LC0xNT
 YyMjcwMzI4XX0=
 -->
