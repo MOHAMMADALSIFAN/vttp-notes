@@ -110,6 +110,11 @@ Angular's new flow control:
 }
 ```
 
+**`ngSwitch` -- Multi condition**
+```ts
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbLTU3MzU4NTk4MCwyMTQ2NzIyODU0LC0xNT
+YyMjcwMzI4XX0=
 -->
