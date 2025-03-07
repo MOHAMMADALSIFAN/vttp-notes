@@ -49,8 +49,9 @@ export class AppModule { }
 ### From template to component
 1. Event binding `(change)="function($event)"`
 
-### From
+### Between components
+Use `@Input()` to 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjUzNzg3NCwtNDg2MDM0MjksNTA0OD
-E1NjY0LC0xMTc4MTUzMDY0XX0=
+eyJoaXN0b3J5IjpbLTE2MTE4MDg1MzUsLTQ4NjAzNDI5LDUwND
+gxNTY2NCwtMTE3ODE1MzA2NF19
 -->
