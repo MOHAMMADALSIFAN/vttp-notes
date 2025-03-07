@@ -1,4 +1,4 @@
-# Angular
+# Foundation
 ## Commands
 
 Generate a new Angular application:
@@ -40,8 +40,10 @@ export class AppModule { }
 |providers| provide a service to all components and services within this module
 |bootstrap| the component to bootstrap if this module is bootstrapped/started
 
-
+## Accessing variables
+1. `{{ property }}`
+2. Value binding `[attribute
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjAzNDI5LDUwNDgxNTY2NCwtMTE3OD
-E1MzA2NF19
+eyJoaXN0b3J5IjpbLTE2NjU3NTEyNTQsLTQ4NjAzNDI5LDUwND
+gxNTY2NCwtMTE3ODE1MzA2NF19
 -->
