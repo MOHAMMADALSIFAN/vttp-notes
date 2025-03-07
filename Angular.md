@@ -164,7 +164,12 @@ Examples:
 
 # Forms
 Add `ReactiveFormsModule` into the module imports. 
+
+## Basic structure
+```ts
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDI0MjExODQsLTE3NTc2OTYzOCwyMT
-Q2NzIyODU0LC0xNTYyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbODYzOTUzODM2LC0xNzU3Njk2MzgsMjE0Nj
+cyMjg1NCwtMTU2MjI3MDMyOF19
 -->
