@@ -106,9 +106,10 @@ Angular's new flow control:
 ```
 
 ```html
-@for (t of texts;
+@for (t of texts; let idx = $index; track t) {
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxNTQ5NTM0LC0xNTYyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
