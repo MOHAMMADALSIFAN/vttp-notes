@@ -269,11 +269,19 @@ To check if a field has a specific type of error:
 ```
 
 **Disabling button:**
-<button t
+```html
+<button type="submit" [disabled]="form.invalid">
+	Submit
+</button>
+```
+
+
+
+
 
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3MDc4MjgsLTU4NzYxNjU2NCwtMTc1Nz
-Y5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbLTE0ODA2NDAxNjcsLTU4NzYxNjU2NCwtMT
+c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
