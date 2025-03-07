@@ -50,8 +50,10 @@ export class AppModule { }
 1. Event binding `(change)="function($event)"`
 
 ### Between components
-Use `@Input()` to 
+- Use `@Input()` to push in data.
+	- 
+- Use `@Output()` along with `new Subject<type>()` to send out data. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE4MDg1MzUsLTQ4NjAzNDI5LDUwND
-gxNTY2NCwtMTE3ODE1MzA2NF19
+eyJoaXN0b3J5IjpbLTU2Mjc5OTk0NywtNDg2MDM0MjksNTA0OD
+E1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
