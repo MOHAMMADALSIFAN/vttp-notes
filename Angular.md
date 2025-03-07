@@ -275,14 +275,10 @@ To check if a field has a specific type of error:
 </button>
 ```
 **Additional conditions:**
-To ensure that the form fields have been touched or received any input from the user before displaying the error message, you ca
-
-
-
-
-
- 
+To ensure that the form fields have been touched or received any input from the user before displaying the error message, you can use `pristine` or `touched` (and their counterparts `dirty` and `untouched`). 
+```ts
+protected isControlValid(field: string) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ0NDIxODQsLTU4NzYxNjU2NCwtMT
+eyJoaXN0b3J5IjpbLTE5Mzk1MjkwODgsLTU4NzYxNjU2NCwtMT
 c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
