@@ -191,10 +191,11 @@ ngOnInit() {
 
 ## Dynamic addition of array
 ```html
-<form (submit)="processForm()">
+<form [formGroup]="form" (submit)="processForm()">
 	<button type="button">Add</button>
 	
 	<tbody>
+		@for(
 		<tr>
 			<td> <input type="date"> </td>
 			<td> <input type="text"> </td>
@@ -211,7 +212,6 @@ ngOnInit() {
 	this.form = this.fb.group({todos: this.array })
 }
 
-
 addNewRow() {
 	const rowGroup = this.fb.group({
 		date: this.fb.control<Date>(new Date()),
@@ -221,6 +221,6 @@ addNewRow() {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjY1NzczMywtMTc1NzY5NjM4LDIxND
+eyJoaXN0b3J5IjpbLTU4NzYxNjU2NCwtMTc1NzY5NjM4LDIxND
 Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
