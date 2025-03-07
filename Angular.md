@@ -160,8 +160,8 @@ Examples:
 5. slice (e.g. `slice:1:3`)
 6. json
 7. keyvalue (iterate through an object, and access properties using `ele.key` and `ele.value`
-8. i18nselect (e.g. `{{ gender | i18nselect: {'male': 'him', 'female
+8. i18nselect (e.g. `{{ gender | i18nselect: {'male': 'him', 'female': 'her', ...}}`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODM5NTI1MiwyMTQ2NzIyODU0LC0xNT
+eyJoaXN0b3J5IjpbLTE3NTc2OTYzOCwyMTQ2NzIyODU0LC0xNT
 YyMjcwMzI4XX0=
 -->
