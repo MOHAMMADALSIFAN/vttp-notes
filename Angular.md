@@ -222,8 +222,9 @@ addNewRow() {
 }
 
 /**
-Note that there is some issue if you track by index, and try to remove the element by index. If you do that, try resetting the form by using
-this.form.setControl('arrayRef', 
+Note that there is some issue if you track by index, and try to remove the element by index. 
+If you do that, try resetting the form by using
+this.form.setControl('arrayRef', array)
 */
 removeRow(idx: number) {
 	this.array.removeAt(idx);
@@ -237,6 +238,6 @@ const data = this.form.value as RSVP
 ```
 Variable names in the form and the model need to be the same to automatically map values. Otherwise, need to do manual mapping. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTc4MjMzMjYsLTU4NzYxNjU2NCwtMT
-c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbMTAxMTgzNDg1MiwtNTg3NjE2NTY0LC0xNz
+U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
