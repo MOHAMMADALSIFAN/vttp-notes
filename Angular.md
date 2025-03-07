@@ -253,7 +253,11 @@ this.form = this.fb.group({
 	...
 })
 ```
+### Checking form and form field validity
+Use `.valid` or `invalid` on `FormGroup` or `FormControl`
+e.g.
+- `form.get('email').valid 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0NjMyMzc2LC01ODc2MTY1NjQsLTE3NT
-c2OTYzOCwyMTQ2NzIyODU0LC0xNTYyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbMjA1NjIwNDMwNywtNTg3NjE2NTY0LC0xNz
+U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
