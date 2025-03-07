@@ -67,8 +67,8 @@ export class AppModule { }
 ## Directives
 *Examples: ngFor, ngIf, ngClass, ngSwitch*
 
-### ngClass 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg2OTU5MjU5LC00ODYwMzQyOSw1MDQ4MT
-U2NjQsLTExNzgxNTMwNjRdfQ==
+eyJoaXN0b3J5IjpbLTQwMDE5NTExMSwtNDg2MDM0MjksNTA0OD
+E1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
