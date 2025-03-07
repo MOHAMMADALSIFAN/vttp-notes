@@ -77,16 +77,17 @@ export class AppModule { }
 ```
 
 **`ngIf` -- Conditional Display**
-```ts
-<div *ngIf="cart.length > 0"; else emptyCart>
-	Your cart has {{cart.length}} item(s).
+```html
+<div *ngIf="cart.length > 0; else elseBlock">
+	Content shown when condition is true
 </div>
 
-<ng-template #emptyCart> <!-- will be displayed
-	Your cart is empty
+<ng-template #elseBlock> <!-- elseBlock is template reference -->
+	Content shown when condition is false
 </ng-template>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTAxNjUwNTAsLTQwMDE5NTExMSwtND
-g2MDM0MjksNTA0ODE1NjY0LC0xMTc4MTUzMDY0XX0=
+eyJoaXN0b3J5IjpbMTg2Njk0MDk1NCwtMjA5MDE2NTA1MCwtND
+AwMTk1MTExLC00ODYwMzQyOSw1MDQ4MTU2NjQsLTExNzgxNTMw
+NjRdfQ==
 -->
