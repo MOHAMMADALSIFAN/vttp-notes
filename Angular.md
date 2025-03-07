@@ -277,8 +277,12 @@ To check if a field has a specific type of error:
 **Additional conditions:**
 To ensure that the form fields have been touched or received any input from the user before displaying the error message, you can use `pristine` or `touched` (and their counterparts `dirty` and `untouched`). 
 ```ts
-protected isControlValid(field: string) 
+// If the field is pristine, it will not be marked as invalid.
+protected isControlValid(field: string): boolean {
+	return !!this.form.get(field)?.valid || this.form.get(field)?.pristine;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk1MjkwODgsLTU4NzYxNjU2NCwtMT
-c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbMTIzNDMwNjczLC01ODc2MTY1NjQsLTE3NT
+c2OTYzOCwyMTQ2NzIyODU0LC0xNTYyMjcwMzI4XX0=
 -->
