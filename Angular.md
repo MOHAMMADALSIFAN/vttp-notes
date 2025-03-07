@@ -82,9 +82,11 @@ export class AppModule { }
 	Your cart has {{cart.length}} item(s).
 </div>
 
-<ng-temp
+<ng-template #emptyCart> <!-- will be displayed
+	Your cart is empty
+</ng-template>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjM0NjE2LC00MDAxOTUxMTEsLTQ4Nj
-AzNDI5LDUwNDgxNTY2NCwtMTE3ODE1MzA2NF19
+eyJoaXN0b3J5IjpbLTIwOTAxNjUwNTAsLTQwMDE5NTExMSwtND
+g2MDM0MjksNTA0ODE1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
