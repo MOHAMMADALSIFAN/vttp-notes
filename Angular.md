@@ -195,11 +195,12 @@ ngOnInit() {
 	<button type="button">Add</button>
 	
 	<tbody>
-		@for(
-		<tr>
+		@for(row of array.controls; let i = $index; track row) {
+		<tr [formGrouupName]='i'>
 			<td> <input type="date"> </td>
 			<td> <input type="text"> </td>
 		</tr>
+		}
 	</tbody>
 </form>
 ```
@@ -221,6 +222,6 @@ addNewRow() {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NzYxNjU2NCwtMTc1NzY5NjM4LDIxND
-Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbMjAxOTA5OTUxOCwtNTg3NjE2NTY0LC0xNz
+U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
 -->
