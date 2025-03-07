@@ -180,14 +180,18 @@ ngOnInit() {
 ```
 
 ```html
-<form [formGroup]="form">
+<form [formGroup]="form" (submit)="processForm()">
 	Name: <input type="text" formControlName="name">
 	Email: <input type="text" formControlName="email">
 	Attending:
-	<input type="radio" value="yes" formControlName="attend>Yes
-	<
+	<input type="radio" value="yes" formControlName="attending">Yes
+	<input type="radio" value="no" formControlName="attending">No
+</form>
 ```
+
+## Dynamic addition of array
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NTAyMjU0NSwtMTc1NzY5NjM4LDIxND
+eyJoaXN0b3J5IjpbMTE0NjE0ODQzMCwtMTc1NzY5NjM4LDIxND
 Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
