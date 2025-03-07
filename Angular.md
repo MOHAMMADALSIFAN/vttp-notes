@@ -40,10 +40,17 @@ export class AppModule { }
 |providers| provide a service to all components and services within this module
 |bootstrap| the component to bootstrap if this module is bootstrapped/started
 
-## Accessing 
+## Accessing data
+
+### From component to template
 1. `{{ property }}`
 2. Value binding `[attribute}="property"`
+
+### From template to component
+1. Event binding `(change)="function($event)"`
+
+### From
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzI4MTM5OCwtNDg2MDM0MjksNTA0OD
+eyJoaXN0b3J5IjpbMTIzNjUzNzg3NCwtNDg2MDM0MjksNTA0OD
 E1NjY0LC0xMTc4MTUzMDY0XX0=
 -->
