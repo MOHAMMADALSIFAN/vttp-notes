@@ -86,8 +86,17 @@ export class AppModule { }
 	Content shown when condition is false
 </ng-template>
 ```
+
+Angular's new flow control:
+```ts
+@if (expression) {
+	<div>True block</div>
+} @else {
+	<div>False block</div>
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Njk0MDk1NCwtMjA5MDE2NTA1MCwtND
-AwMTk1MTExLC00ODYwMzQyOSw1MDQ4MTU2NjQsLTExNzgxNTMw
-NjRdfQ==
+eyJoaXN0b3J5IjpbLTE3MzA2NjQ3MTYsLTIwOTAxNjUwNTAsLT
+QwMDE5NTExMSwtNDg2MDM0MjksNTA0ODE1NjY0LC0xMTc4MTUz
+MDY0XX0=
 -->
