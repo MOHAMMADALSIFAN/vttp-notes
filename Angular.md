@@ -167,9 +167,21 @@ Add `ReactiveFormsModule` into the module imports.
 
 ## Basic structure
 ```ts
+fb: FormBuilder = inject(FormBuilder);
+form!: FormGroup;
 
+ngOnInit() {
+	this.form = this.fb.group({
+		name: this.fb.control<string>(''),
+		email: this.fb.control<string>('')
+	})
+}
+```
+
+```html
+<form [formG
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzOTUzODM2LC0xNzU3Njk2MzgsMjE0Nj
+eyJoaXN0b3J5IjpbMzk5NjYwNTk5LC0xNzU3Njk2MzgsMjE0Nj
 cyMjg1NCwtMTU2MjI3MDMyOF19
 -->
