@@ -242,9 +242,18 @@ Variable names in the form and the model need to be the same to automatically ma
 Pre-built validators:
 1. `required` -- mandatory field
 2. `requiredTrue` -- requires a checkbox to be checked
-3. `email` - entry must be in a valid email format
-4. `min`
+3. `email` -- entry must be in a valid email format
+4. `min`, `max` -- validate a number range
+5. `minLength`, `maxLength`
+6. `pattern` -- use regular expression to validate a field
+
+```ts
+this.form = this.fb.group({
+	name: this.fb.control<string>('', [Validators.required]),
+	...
+})
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjAxNTM0MzgsLTU4NzYxNjU2NCwtMT
-c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
+eyJoaXN0b3J5IjpbNTE0NjMyMzc2LC01ODc2MTY1NjQsLTE3NT
+c2OTYzOCwyMTQ2NzIyODU0LC0xNTYyMjcwMzI4XX0=
 -->
