@@ -67,8 +67,13 @@ export class AppModule { }
 ## Directives
 *Examples: ngFor, ngIf, ngClass, ngSwitch*
 
+**`ngClass` for conditional styling**
+```html
+<input type="text" [disabled]="isDisabled"
+	[ngClass]="{ 'grey-border': isDi
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDE5NTExMSwtNDg2MDM0MjksNTA0OD
-E1NjY0LC0xMTc4MTUzMDY0XX0=
+eyJoaXN0b3J5IjpbMTQ2Njk1MTEzLC00MDAxOTUxMTEsLTQ4Nj
+AzNDI5LDUwNDgxNTY2NCwtMTE3ODE1MzA2NF19
 -->
