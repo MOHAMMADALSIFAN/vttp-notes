@@ -173,15 +173,21 @@ form!: FormGroup;
 ngOnInit() {
 	this.form = this.fb.group({
 		name: this.fb.control<string>(''),
-		email: this.fb.control<string>('')
+		email: this.fb.control<string>(''),
+		attending: this.fb.control<string>('')
 	})
 }
 ```
 
 ```html
-<form [formG
+<form [formGroup]="form">
+	Name: <input type="text" formControlName="name">
+	Email: <input type="text" formControlName="email">
+	Attending:
+	<input type="radio" value="yes" formControlName="attend>Yes
+	<
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5NjYwNTk5LC0xNzU3Njk2MzgsMjE0Nj
-cyMjg1NCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbMTM3NTAyMjU0NSwtMTc1NzY5NjM4LDIxND
+Y3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
