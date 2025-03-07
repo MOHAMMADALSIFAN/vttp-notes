@@ -237,7 +237,14 @@ const data = this.form.value as RSVP
 // use whatever model the form maps to
 ```
 Variable names in the form and the model need to be the same to automatically map values. Otherwise, need to do manual mapping. 
+
+## Validation
+Pre-built validators:
+1. `required` -- mandatory field
+2. `requiredTrue` -- requires a checkbox to be checked
+3. `email` - entry must be in a valid email format
+4. `min`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMTgzNDg1MiwtNTg3NjE2NTY0LC0xNz
-U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbLTIwMjAxNTM0MzgsLTU4NzYxNjU2NCwtMT
+c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
