@@ -76,10 +76,11 @@ export class AppModule { }
 <td [ngClass]="val > 10 ? 'red' : 'green'">{{ val}}</td>
 ```
 
-** `ngIf` for Conditional Display**
-rqwe
-
+**`ngIf` -- Conditional Display**
+```html
+<div *ngIf="cart.length 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU0NDU4MTAsLTQwMDE5NTExMSwtND
-g2MDM0MjksNTA0ODE1NjY0LC0xMTc4MTUzMDY0XX0=
+eyJoaXN0b3J5IjpbLTUzNTgwODcxLC00MDAxOTUxMTEsLTQ4Nj
+AzNDI5LDUwNDgxNTY2NCwtMTE3ODE1MzA2NF19
 -->
