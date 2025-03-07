@@ -261,11 +261,19 @@ To check if a field has a specific type of error:
 `form.get('email').hasError('email')`
 
 ### Error messages
-Conditional display:
+**Conditional display:**
 ```html
-<
+<div *ngIf="form.get('name').hasError('required')">
+	Please enter your name
+</div>
+```
+
+**Disabling button:**
+<button t
+
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTA3NjczNSwtNTg3NjE2NTY0LC0xNz
-U3Njk2MzgsMjE0NjcyMjg1NCwtMTU2MjI3MDMyOF19
+eyJoaXN0b3J5IjpbNTQ3MDc4MjgsLTU4NzYxNjU2NCwtMTc1Nz
+Y5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
