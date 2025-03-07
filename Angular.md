@@ -145,7 +145,14 @@ Updated syntax:
 	}
 }
 ```
+
+**Pipes**
+```html
+{{n | titlecase}}
+*ngFor="let n of names | titlecase"
+{{ value | number: '1.1-3' | currency: 'SGD':'symbol-narrow' }}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjgwMTQzNiwyMTQ2NzIyODU0LC0xNT
-YyMjcwMzI4XX0=
+eyJoaXN0b3J5IjpbODk0OTk0NDA4LDIxNDY3MjI4NTQsLTE1Nj
+IyNzAzMjhdfQ==
 -->
