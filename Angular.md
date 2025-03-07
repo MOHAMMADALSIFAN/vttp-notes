@@ -274,7 +274,8 @@ To check if a field has a specific type of error:
 	Submit
 </button>
 ```
-
+**Additional conditions:**
+To ensure that the form fields have been touched or received any input from the user before displaying the error message, you ca
 
 
 
@@ -282,6 +283,6 @@ To check if a field has a specific type of error:
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODA2NDAxNjcsLTU4NzYxNjU2NCwtMT
+eyJoaXN0b3J5IjpbLTE3OTQ0NDIxODQsLTU4NzYxNjU2NCwtMT
 c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
