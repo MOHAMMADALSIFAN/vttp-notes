@@ -220,6 +220,13 @@ addNewRow() {
 	})
 	this.array.push(rowGrop);
 }
+
+/**
+Note that there is some issue
+*/
+removeRow(idx: number) {
+	this.array.removeAt(idx);
+}
 ```
 
 ## Reading form values and data
@@ -227,8 +234,8 @@ addNewRow() {
 const data = this.form.value as RSVP 
 // use whatever model the form maps to
 ```
-Variable names in the form and the model need to be the same to automatically map values. Otherwise, need to do manual mapp
+Variable names in the form and the model need to be the same to automatically map values. Otherwise, need to do manual mapping. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTAxMjUwNzAsLTU4NzYxNjU2NCwtMT
+eyJoaXN0b3J5IjpbLTEwNjczOTAxMjYsLTU4NzYxNjU2NCwtMT
 c1NzY5NjM4LDIxNDY3MjI4NTQsLTE1NjIyNzAzMjhdfQ==
 -->
