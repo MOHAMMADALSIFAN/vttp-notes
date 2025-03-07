@@ -88,7 +88,7 @@ export class AppModule { }
 ```
 
 Angular's new flow control:
-```ts
+```html
 @if (expression) {
 	<div>True block</div>
 } @else {
@@ -96,7 +96,5 @@ Angular's new flow control:
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA2NjQ3MTYsLTIwOTAxNjUwNTAsLT
-QwMDE5NTExMSwtNDg2MDM0MjksNTA0ODE1NjY0LC0xMTc4MTUz
-MDY0XX0=
+eyJoaXN0b3J5IjpbLTE1NjIyNzAzMjhdfQ==
 -->
