@@ -282,7 +282,9 @@ protected isControlValid(field: string): boolean {
 	return !!this.form.get(field)?.valid || this.form.get(field)?.pristine;
 }
 ```
+## Custom validators
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDMwNjczLC01ODc2MTY1NjQsLTE3NT
+eyJoaXN0b3J5IjpbMTQ1NjAxODg1LC01ODc2MTY1NjQsLTE3NT
 c2OTYzOCwyMTQ2NzIyODU0LC0xNTYyMjcwMzI4XX0=
 -->
