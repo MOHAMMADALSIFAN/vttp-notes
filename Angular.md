@@ -303,12 +303,26 @@ In child:
 
 In parent:
 ```html
-<app-child #reg>
+<app-child #regForm>
 	<button type="button" (click)="process()">
 		Register
 	</button>
 </app-child>
 ```
+
+To gain a reference to the child component instance:
+```ts
+export class AppComponent implements AfterViewInit {
+	// Query wth class
+	@ViewChild(RegistrationComponent)
+	regForm: RegistrationComponent
+
+	// Or query with template reference
+	@ViewChild('regForm')
+	regForm: RegistrationComponent
+
+	ng
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTEyMDM2NCw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTgyODMzNjM1MSw5MDk0MTQ1NzhdfQ==
 -->
