@@ -352,6 +352,9 @@ export class AppComponent implements AfterViewInit {
 
 # Progressive Web Application
 Command to use: `ng add @angular/pwa`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzQwOTkwNSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTIxNTA2MTkwOSwtNzY3NDA5OTA1LDkwOT
+QxNDU3OF19
 -->
