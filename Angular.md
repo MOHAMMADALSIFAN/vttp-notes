@@ -394,7 +394,16 @@ processForm(form: ngForm) {
 }
 ```
 *Only use these with template-driven forms.*
+
+```ts
+form: FormGroup;
+
+this.form.reset()
+
+//Reset the form to specific values
+this.form.reset({
+	username: '
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyMTU4NzcsMjM2NTg1OTE5LC0yMTUwNj
-E5MDksLTc2NzQwOTkwNSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTMzNTA2NjE0OCwyMzY1ODU5MTksLTIxNT
+A2MTkwOSwtNzY3NDA5OTA1LDkwOTQxNDU3OF19
 -->
