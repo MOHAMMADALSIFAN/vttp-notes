@@ -379,8 +379,18 @@ export class MaterialModule { }
 
 # Template reference
 ```html
-<h1 #h1Element> hell
+<h1 #h1Element>hello, world</h1>
+
+<!-- Assign the template ref on a <form> to ngForm object -->
+<form #form="ngForm" (ngSubmit)="processForm(form)">
+...
+</form>
+```
+```ts
+processForm(form: ngForm) {
+	const 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTIwNzc4NywtMjE1MDYxOTA5LC03Nj
-c0MDk5MDUsOTA5NDE0NTc4XX0=
+eyJoaXN0b3J5IjpbODc2MjI4NTcyLC0yMTUwNjE5MDksLTc2Nz
+QwOTkwNSw5MDk0MTQ1NzhdfQ==
 -->
