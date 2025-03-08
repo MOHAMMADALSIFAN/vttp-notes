@@ -291,6 +291,12 @@ const nonWhitespace = (ctrl: AbstractControl) => {
 	// return an object indicating what errors have occurred
 }
 ```
+
+# Content projection
+In parent:
+```html
+<app-child>
+	<button type="button" (click)="process
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5NDE0NTc4XX0=
+eyJoaXN0b3J5IjpbMTQ3MjIzMzEyNSw5MDk0MTQ1NzhdfQ==
 -->
