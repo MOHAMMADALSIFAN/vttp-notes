@@ -297,8 +297,19 @@ const nonWhitespace = (ctrl: AbstractControl) => {
 In child:
 ```html
 <form ...>
+	<!-- content to be projected below -->
 	<ng-content></ng-content>
 </form>
+```
+```ts
+export class RegistrationComponent implments OnInit {
+	@Input() title: string
+
+	get values(): Registration {
+		return this.form.value as Registration
+	}
+	...
+}
 ```
 
 In parent:
@@ -324,5 +335,5 @@ export class AppComponent implements AfterViewInit {
 	ngAfterViewInit() { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMzQ4MzAwNyw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbMTI3MzY3Mjk4Nyw5MDk0MTQ1NzhdfQ==
 -->
