@@ -376,7 +376,11 @@ const MATERIAL = [ MatButtonModule, MatIconModule ];
 })
 export class MaterialModule { }
 ```
+
+# Template reference
+```html
+<h1 #h1Element> hell
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Njk3OTA1NiwtMjE1MDYxOTA5LC03Nj
+eyJoaXN0b3J5IjpbLTQ4OTIwNzc4NywtMjE1MDYxOTA5LC03Nj
 c0MDk5MDUsOTA5NDE0NTc4XX0=
 -->
