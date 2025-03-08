@@ -301,16 +301,14 @@ In child:
 </form>
 ```
 
-
-
 In parent:
 ```html
-<app-child>
+<app-child #reg>
 	<button type="button" (click)="process()">
 		Register
 	</button>
 </app-child>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODQwODQ1MSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbMTA5NTEyMDM2NCw5MDk0MTQ1NzhdfQ==
 -->
