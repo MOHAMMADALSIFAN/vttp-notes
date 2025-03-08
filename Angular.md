@@ -402,8 +402,14 @@ this.form.reset()
 
 //Reset the form to specific values
 this.form.reset({
-	username: '
+	username: 'user',
+	email: 'user@example.com'
+})
+
+//Reset individual controls
+this.form.get('username').reset();
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTA2NjE0OCwyMzY1ODU5MTksLTIxNT
+eyJoaXN0b3J5IjpbLTc2MzYxODkzMiwyMzY1ODU5MTksLTIxNT
 A2MTkwOSwtNzY3NDA5OTA1LDkwOTQxNDU3OF19
 -->
