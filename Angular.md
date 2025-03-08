@@ -44,7 +44,7 @@ export class AppModule { }
 
 ### From component to template
 1. `{{ property }}`
-2. Value binding `[attribute}="property"`
+2. Value binding `[attribute]="property"`
 
 ### From template to component
 1. Event binding `(change)="function($event)"`
@@ -321,8 +321,8 @@ export class AppComponent implements AfterViewInit {
 	@ViewChild('regForm')
 	regForm: RegistrationComponent
 
-	ng
+	ngAfterViewInit() { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyODMzNjM1MSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTUxMzQ4MzAwNyw5MDk0MTQ1NzhdfQ==
 -->
