@@ -393,7 +393,8 @@ processForm(form: ngForm) {
 	form.reset();
 }
 ```
+*Only use these with template-driven forms.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2NTg1OTE5LC0yMTUwNjE5MDksLTc2Nz
-QwOTkwNSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbMzUyMTU4NzcsMjM2NTg1OTE5LC0yMTUwNj
+E5MDksLTc2NzQwOTkwNSw5MDk0MTQ1NzhdfQ==
 -->
