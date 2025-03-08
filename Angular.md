@@ -20,6 +20,9 @@ Generate components:
 Generate services:
 `ng g s [path/to/service]`
 
+Generate new modules:
+`ng g m [module name]`
+
 Progressive Web Application:
 `ng add @angular/pwa`
 
@@ -353,8 +356,10 @@ export class AppComponent implements AfterViewInit {
 # Progressive Web Application
 Command to use: `ng add @angular/pwa`
 
-
+# Angular Material
+1. Generate a new module an add it to the list of imports in the main `AppModule`.
+2. Ke
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTA2MTkwOSwtNzY3NDA5OTA1LDkwOT
-QxNDU3OF19
+eyJoaXN0b3J5IjpbLTE4MDc2OTg3ODgsLTIxNTA2MTkwOSwtNz
+Y3NDA5OTA1LDkwOTQxNDU3OF19
 -->
