@@ -388,9 +388,12 @@ export class MaterialModule { }
 ```
 ```ts
 processForm(form: ngForm) {
-	const 
+	const name = form.value.name;
+	...
+	form.reset();
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2MjI4NTcyLC0yMTUwNjE5MDksLTc2Nz
+eyJoaXN0b3J5IjpbMjM2NTg1OTE5LC0yMTUwNjE5MDksLTc2Nz
 QwOTkwNSw5MDk0MTQ1NzhdfQ==
 -->
