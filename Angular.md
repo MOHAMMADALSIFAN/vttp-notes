@@ -332,8 +332,20 @@ export class AppComponent implements AfterViewInit {
 	@ViewChild('regForm')
 	regForm: RegistrationComponent
 
-	ngAfterViewInit() { }
+	ngAfterViewInit() { 
+		// Instead of using attribute binding 
+		this.regForm.title = "New product"
+	}
+
+	/**
+	* When the button (projected is pressed, get the values from the component
+	*/
+	process() {
+		const newReg: Registration = this.regForm.values
+		...
+	}
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzY3Mjk4Nyw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTY1MjMxODIzNyw5MDk0MTQ1NzhdfQ==
 -->
