@@ -358,8 +358,18 @@ Command to use: `ng add @angular/pwa`
 
 # Angular Material
 1. Generate a new module an add it to the list of imports in the main `AppModule`.
-2. Ke
+2. Keep all Material module imports in the separate module
+
+```ts
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule} from '@angular/material/button';
+const MATERIAL = [ MatButtonModule, MatIconModule ];
+
+@NgModule({
+	imports: MATERIAL,
+	exports: M
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc2OTg3ODgsLTIxNTA2MTkwOSwtNz
+eyJoaXN0b3J5IjpbLTE4MjIxMDQwMDQsLTIxNTA2MTkwOSwtNz
 Y3NDA5OTA1LDkwOTQxNDU3OF19
 -->
