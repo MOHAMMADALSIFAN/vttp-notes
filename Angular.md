@@ -20,6 +20,9 @@ Generate components:
 Generate services:
 `ng g s [path/to/service]`
 
+Progressive Web Application:
+`ng add @angular/pwa`
+
 ## How it works
 ```typescript
 @NgModule({
@@ -333,7 +336,7 @@ export class AppComponent implements AfterViewInit {
 	regForm: RegistrationComponent
 
 	ngAfterViewInit() { 
-		// Instead of using attribute binding 
+		// Instead of using attribute binding, programmatically set the component attribute.
 		this.regForm.title = "New product"
 	}
 
@@ -346,6 +349,9 @@ export class AppComponent implements AfterViewInit {
 	}
 }
 ```
+
+# Progressive Web Application
+Command to use: `ng add @angular/pwa`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjMxODIzNyw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTc2NzQwOTkwNSw5MDk0MTQ1NzhdfQ==
 -->
