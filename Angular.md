@@ -175,13 +175,17 @@ Add `ReactiveFormsModule` into the module imports.
 ```ts
 fb: FormBuilder = inject(FormBuilder);
 form!: FormGroup;
-lables 
+labels = ['A', 'B', 'C' ];
 
 ngOnInit() {
+	this.array = this.fb.array(
+		this.labels.map(() => this.fb.control<string>(''))
+	)
 	this.form = this.fb.group({
 		name: this.fb.control<string>(''),
 		email: this.fb.control<string>(''),
-		attending: this.fb.control<string>('')
+		attending: this.fb.control<string>(''),
+		demoArray: this.array
 	})
 }
 ```
@@ -373,6 +377,6 @@ const MATERIAL = [ MatButtonModule, MatIconModule ];
 export class MaterialModule { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjgxMTA2MCwtMjE1MDYxOTA5LC03Nj
+eyJoaXN0b3J5IjpbLTY0Njk3OTA1NiwtMjE1MDYxOTA5LC03Nj
 c0MDk5MDUsOTA5NDE0NTc4XX0=
 -->
