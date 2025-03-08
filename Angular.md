@@ -293,10 +293,24 @@ const nonWhitespace = (ctrl: AbstractControl) => {
 ```
 
 # Content projection
+
+In child:
+```html
+<form ...>
+	<ng-content></ng-content>
+</form>
+```
+
+
+
 In parent:
 ```html
 <app-child>
-	<button type="button" (click)="process
+	<button type="button" (click)="process()">
+		Register
+	</button>
+</app-child>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjIzMzEyNSw5MDk0MTQ1NzhdfQ==
+eyJoaXN0b3J5IjpbLTY0ODQwODQ1MSw5MDk0MTQ1NzhdfQ==
 -->
