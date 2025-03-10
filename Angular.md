@@ -424,9 +424,11 @@ Subscribing
 ```ts
 this.sub$ = this.form.valueChanges.subscribe({
 	next: (data) => { console.info(data[0].name) },
-	error: (err) =>
+	error: (err) => {console.error(err)},
+	complete: () => {this.sub$.unsubscribe()}
+})
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc0NTc4NjIsMTUzOTQyODU1LC03Nj
-M2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbMjEzNTk2OTYxNCwtMTY4NzQ1Nzg2MiwxNT
+M5NDI4NTUsLTc2MzYxODkzMl19
 -->
