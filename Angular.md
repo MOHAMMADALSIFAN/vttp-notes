@@ -477,8 +477,17 @@ If data is a promise:
 </ng-template>
 ```
 *Will wait for promise to resolve. In the meantime, will show loading.*
+
+If data is an observable:
+```html
+<ul>
+	<li *ngFor="let u of data$ | async>
+		<user-info [user]="u"></user-info>
+	</li>
+</ul>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODU3MzQwMiwtMTAxMjAzMzMzOSwtMT
+eyJoaXN0b3J5IjpbLTcyNDgxMjE3NiwtMTAxMjAzMzMzOSwtMT
 c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
 NSwtNzYzNjE4OTMyXX0=
 -->
