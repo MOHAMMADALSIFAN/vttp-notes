@@ -567,8 +567,17 @@ Parameterised routes
 ```
 
 Query parameters:
+```ts
+this.router.navigate(['/customer', custId],
+	{ queryParams: { view: 'simple' } )
+```
+```html
+<a *ngFor="let c of customers" [routerLink]="['/customer', c.custId ]"
+	[queryParams] = "{ view: 'simple' }">
+	{{c.name}}
+</a>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDE0MTM5MiwtMTgzNDc5Nzc2NCwtMT
+eyJoaXN0b3J5IjpbMTQ3NTk0MTczOCwtMTgzNDc5Nzc2NCwtMT
 g0NDc2NzU5NF19
 -->
