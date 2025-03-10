@@ -1,4 +1,4 @@
-# Foundation
+# FoundationAngular
 ## Commands
 
 Generate a new Angular application:
@@ -532,5 +532,6 @@ public WebMvcConfigurer corsConfigurer() {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQ3Njc1OTRdfQ==
+eyJoaXN0b3J5IjpbLTE4MzQ3OTc3NjQsLTE4NDQ3Njc1OTRdfQ
+==
 -->
