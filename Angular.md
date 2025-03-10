@@ -528,10 +528,11 @@ Add as bean (in SpringApplication)
 ```java
 @Bean
 public WebMvcConfigurer corsConfigurer() {
-	
+	return new EnableCORS();
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTAwMzk3LDExMzg0MDk0NTEsLTEwMT
-IwMzMzMzksLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2
-MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbLTE4NDQ3Njc1OTQsMTEzODQwOTQ1MSwtMT
+AxMjAzMzMzOSwtMTc2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3
+ODYyLDE1Mzk0Mjg1NSwtNzYzNjE4OTMyXX0=
 -->
