@@ -501,9 +501,21 @@ If data is an observable:
 ```
 
 # Cross Origin
+In the Controller:
+```java
+@RestController
+@RequestMapping(...)
+@CrossOrigin(origins="*")
+public class DemoRestController {
+	@GetMapping(...)
+	@CrossOrigin(origins="*")
+	public ...
+}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODE0MjcwNiwxMTM4NDA5NDUxLC0xMD
-EyMDMzMzM5LC0xNzYwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4
-NjIsMTUzOTQyODU1LC03NjM2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbODc0NzkzNTAwLDExMzg0MDk0NTEsLTEwMT
+IwMzMzMzksLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2
+MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
 -->
