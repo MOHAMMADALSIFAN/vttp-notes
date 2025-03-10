@@ -460,12 +460,18 @@ this.sub$ = this.http.get<User[]>(url)
 	})
 ```
 ```ts
-lastValueFrom(this.http.get<User[]>(url)
+this.data$ = lastValueFrom(this.http.get<User[]>(url)
 	.then((data) => {data.name})
 	.catch((err: HttpErrorResponse) => { ... })
 ```
+
+## Async pipe
+```html
+<div *ngIf="data$ | async as u; else loading">
+	<user-info [user]="u"
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1ODU5MzQ3LC0xMDEyMDMzMzM5LC0xNz
+eyJoaXN0b3J5IjpbODAyMDgzNzA1LC0xMDEyMDMzMzM5LC0xNz
 YwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOTQyODU1
 LC03NjM2MTg5MzJdfQ==
 -->
