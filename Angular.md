@@ -545,9 +545,16 @@ const appRoutes: Routes = [
 ```html
 <router-outlet></router-outlet>
 ```
-
-
+## Changing routes
+1. Use `routerLink` instead of `href`
+	```html
+	<a [routerLink]="['/home']">Home</a>
+	```
+2. Changing routes programmatically
+	```ts
+	this.router.navigate(['/home'])
+	``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjkyOTc5NywtMTgzNDc5Nzc2NCwtMT
-g0NDc2NzU5NF19
+eyJoaXN0b3J5IjpbLTEzMTQyODMzMDksLTE4MzQ3OTc3NjQsLT
+E4NDQ3Njc1OTRdfQ==
 -->
