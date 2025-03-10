@@ -471,8 +471,10 @@ queryParams = new HttpParams()
 	.set("custId", 1234);
 const headers = new HttpHeaders()
 	.set('Authorization', `Bearer ${jwt}`);
+	
 this.http.get(url, body, {
-
+	headers: headers,
+	params: queryParams
 });
 ```
 
@@ -498,7 +500,7 @@ If data is an observable:
 </ul>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjYwNTY5MDksLTEwMTIwMzMzMzksLT
-E3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4
-NTUsLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbMTEzODQwOTQ1MSwtMTAxMjAzMzMzOSwtMT
+c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
+NSwtNzYzNjE4OTMyXX0=
 -->
