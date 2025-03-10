@@ -423,8 +423,9 @@ Operators within pipe:
 Subscribing
 ```ts
 this.sub$ = this.form.valueChanges.subscribe({
-	next: (data) = { console.info(data[0].name) }
+	next: (data) = { console.info(data[0].name) },
+	
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMzY5MjU1LC03NjM2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbMTUzOTQyODU1LC03NjM2MTg5MzJdfQ==
 -->
