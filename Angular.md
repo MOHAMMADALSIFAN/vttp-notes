@@ -416,7 +416,11 @@ Operators within pipe:
 2. map
 3. tap -- observe the data stream. Used to perform side-effects
 4. take -- take the first n values
-5. takeWhile -- continue taking data until predica
+5. takeWhile -- continue taking data until predicate is false
+6. skip, skipWhile
+7. switchMap -- change to a different stream
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjI5MzA5MCwtNzYzNjE4OTMyXX0=
+eyJoaXN0b3J5IjpbLTEzOTczOTM5MTksLTc2MzYxODkzMl19
 -->
