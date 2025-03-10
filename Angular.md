@@ -618,8 +618,17 @@ Need to specify in the routes:
 export const hasSaved: CanDeactivateFn<OrderFormComponent> = 
 	(orderForm: OrderFormComponent, route: ActivatedRouteSnapshot, state: routerStateSnapshot) => {
 	
+	if (orderForm.form.dirty)
+		// will return true or false depending on user input
+		return confirm('You have not savedthe order.\nAre you sure you want to leave?);
+	
+	return true;
+}
+```
+```ts
+{ path: 'order', component: OrderFormComponent, canDeactivate: [hasSaved ]}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTQ0NzgyMCwtMTgzNDc5Nzc2NCwtMT
-g0NDc2NzU5NF19
+eyJoaXN0b3J5IjpbNTcwNTU2MTIyLC0xODM0Nzk3NzY0LC0xOD
+Q0NzY3NTk0XX0=
 -->
