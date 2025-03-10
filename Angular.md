@@ -553,8 +553,14 @@ const appRoutes: Routes = [
 2. Changing routes programmatically
 	```ts
 	this.router.navigate(['/home'])
-	``
+	```
+## Parameterised routes
+In the routes definition:
+```ts
+{ path: 'customer/:custId', component: CustomerDetailComponent }
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQyODMzMDksLTE4MzQ3OTc3NjQsLT
+eyJoaXN0b3J5IjpbLTIxMzc5OTk2NjIsLTE4MzQ3OTc3NjQsLT
 E4NDQ3Njc1OTRdfQ==
 -->
