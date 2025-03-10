@@ -542,9 +542,12 @@ const appRoutes: Routes = [
 	{path: "**", redirectTo: '/', pathMatch: 'full'}
 ];
 ```
+```html
+<router-outlet></router-outlet>
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MzgyNzk1OSwtMTgzNDc5Nzc2NCwtMT
+eyJoaXN0b3J5IjpbMTMzMjkyOTc5NywtMTgzNDc5Nzc2NCwtMT
 g0NDc2NzU5NF19
 -->
