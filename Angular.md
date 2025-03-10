@@ -584,8 +584,19 @@ this.route.snapshot.params.custId;
 this.route.snapshot.queryParams.view
 ```
 
+Can also bind route parameters to `@Input()`
+e.g.
+```ts
+@Input()
+custId: string
 
+// In AppModule
+RouterModule.forRoot(appRoutes, { bindToComponentInputs: true })
+```
+
+# Route Guards
+## Can A
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTM5NDM4MzYsLTE4MzQ3OTc3NjQsLT
-E4NDQ3Njc1OTRdfQ==
+eyJoaXN0b3J5IjpbMjQ1MTYzNDMxLC0xODM0Nzk3NzY0LC0xOD
+Q0NzY3NTk0XX0=
 -->
