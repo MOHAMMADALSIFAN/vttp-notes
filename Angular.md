@@ -515,10 +515,15 @@ public class DemoRestController {
 
 ## Enabling CORS globally
 ```java
-
+public class EnableCORS implments WebMvcConfigurer {
+	@Override
+	public void addCorsMappings(CorsRegistry registry) {
+		registry.addMapping("/api/*"
+	}
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODIzMjg3LDExMzg0MDk0NTEsLTEwMT
-IwMzMzMzksLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2
-MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbMTAzMTc1NjgwMywxMTM4NDA5NDUxLC0xMD
+EyMDMzMzM5LC0xNzYwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4
+NjIsMTUzOTQyODU1LC03NjM2MTg5MzJdfQ==
 -->
