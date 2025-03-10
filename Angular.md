@@ -533,8 +533,18 @@ public WebMvcConfigurer corsConfigurer() {
 ```
 
 # Router
+Import: `RouterModule.forRoot(appRoutes)`
+
+```ts
+const appRoutes: Routes = [
+	{path: '', component: HomeComponent},
+	{path: 'login', component: LoginComponent},
+	{path: "**", redirectTo: '/', pathMatch: 'full'}
+];
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjEyNDY3MiwtMTgzNDc5Nzc2NCwtMT
+eyJoaXN0b3J5IjpbMTI4MzgyNzk1OSwtMTgzNDc5Nzc2NCwtMT
 g0NDc2NzU5NF19
 -->
