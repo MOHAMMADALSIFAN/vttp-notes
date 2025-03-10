@@ -554,13 +554,21 @@ const appRoutes: Routes = [
 	```ts
 	this.router.navigate(['/home'])
 	```
-## Parameterised routes
-In the routes definition:
+## Parameterised routes & query parameters
+Parameterised routes
 ```ts
 { path: 'customer/:custId', component: CustomerDetailComponent }
 ```
+```html
+<a *ngFor="let c of customers"
+	[routerLink]="['/customer', c.custId ]">
+	{{c.name}}
+</a>
+```
 
+Query parameters:
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzc5OTk2NjIsLTE4MzQ3OTc3NjQsLT
-E4NDQ3Njc1OTRdfQ==
+eyJoaXN0b3J5IjpbLTk0MDE0MTM5MiwtMTgzNDc5Nzc2NCwtMT
+g0NDc2NzU5NF19
 -->
