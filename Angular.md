@@ -465,10 +465,15 @@ this.data$ = lastValueFrom(this.http.get<User[]>(url)
 	.catch((err: HttpErrorResponse) => { ... })
 ```
 
-## With params
+## With params and headers
 ```ts
-HttpParams queryParams = new HttpParams()
+queryParams = new HttpParams()
 	.set("custId", 1234);
+const headers = new HttpHeaders()
+	.set('Authorization', `Bearer ${jwt}`);
+this.http.get(url, body, {
+
+});
 ```
 
 ## Async pipe
@@ -493,7 +498,7 @@ If data is an observable:
 </ul>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjA4ODc3LC0xMDEyMDMzMzM5LC0xNz
-YwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOTQyODU1
-LC03NjM2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbLTEzMjYwNTY5MDksLTEwMTIwMzMzMzksLT
+E3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4
+NTUsLTc2MzYxODkzMl19
 -->
