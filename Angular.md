@@ -466,12 +466,19 @@ this.data$ = lastValueFrom(this.http.get<User[]>(url)
 ```
 
 ## Async pipe
+If data is a promise:
 ```html
 <div *ngIf="data$ | async as u; else loading">
-	<user-info [user]="u"
+	<user-info [user]="u"></user-info>
+</div>
+
+<ng-template #loading>
+	Loading...
+</ng-template>
 ```
+*Will wait for promise to resolve. In the meantime, will show loading.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyMDgzNzA1LC0xMDEyMDMzMzM5LC0xNz
-YwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOTQyODU1
-LC03NjM2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbLTI1ODU3MzQwMiwtMTAxMjAzMzMzOSwtMT
+c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
+NSwtNzYzNjE4OTMyXX0=
 -->
