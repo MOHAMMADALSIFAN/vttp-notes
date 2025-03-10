@@ -435,8 +435,9 @@ ngOnDestroy() {
 }
 ```
 
+# Promise
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOT
-QyODU1LC03NjM2MTg5MzJdfQ==
+eyJoaXN0b3J5IjpbLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4Nz
+Q1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
 -->
