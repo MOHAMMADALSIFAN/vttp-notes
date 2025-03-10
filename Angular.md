@@ -420,7 +420,11 @@ Operators within pipe:
 6. skip, skipWhile
 7. switchMap -- change to a different stream
 
-
+Subscribing
+```ts
+this.sub$ = this.form.valueChanges.subscribe({
+	next: (data) =
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTczOTM5MTksLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbNDk0OTQ5MzEwLC03NjM2MTg5MzJdfQ==
 -->
