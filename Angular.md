@@ -531,7 +531,10 @@ public WebMvcConfigurer corsConfigurer() {
 	return new EnableCORS();
 }
 ```
+
+# Router
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ3OTc3NjQsLTE4NDQ3Njc1OTRdfQ
-==
+eyJoaXN0b3J5IjpbMTA2NjEyNDY3MiwtMTgzNDc5Nzc2NCwtMT
+g0NDc2NzU5NF19
 -->
