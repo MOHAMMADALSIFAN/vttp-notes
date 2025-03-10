@@ -560,8 +560,7 @@ Parameterised routes
 { path: 'customer/:custId', component: CustomerDetailComponent }
 ```
 ```html
-<a *ngFor="let c of customers"
-	[routerLink]="['/customer', c.custId ]">
+<a *ngFor="let c of customers" [routerLink]="['/customer', c.custId ]">
 	{{c.name}}
 </a>
 ```
@@ -573,11 +572,20 @@ this.router.navigate(['/customer', custId],
 ```
 ```html
 <a *ngFor="let c of customers" [routerLink]="['/customer', c.custId ]"
-	[queryParams] = "{ view: 'simple' }">
+	[queryParams]="{ view: 'simple' }">
 	{{c.name}}
 </a>
 ```
+
+Retrieve data using:
+```ts
+route = inject(ActivatedRoute);
+this.route.snapshot.params.custId;
+this.route.snapshot.queryParams.view
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTk0MTczOCwtMTgzNDc5Nzc2NCwtMT
-g0NDc2NzU5NF19
+eyJoaXN0b3J5IjpbLTIwNTM5NDM4MzYsLTE4MzQ3OTc3NjQsLT
+E4NDQ3Njc1OTRdfQ==
 -->
