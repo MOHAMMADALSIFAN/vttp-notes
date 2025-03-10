@@ -513,9 +513,12 @@ public class DemoRestController {
 }
 ```
 
+## Enabling CORS globally
+```java
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0NzkzNTAwLDExMzg0MDk0NTEsLTEwMT
+eyJoaXN0b3J5IjpbLTczODIzMjg3LDExMzg0MDk0NTEsLTEwMT
 IwMzMzMzksLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4NzQ1Nzg2
 MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
 -->
