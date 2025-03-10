@@ -465,6 +465,12 @@ this.data$ = lastValueFrom(this.http.get<User[]>(url)
 	.catch((err: HttpErrorResponse) => { ... })
 ```
 
+## With params
+```ts
+HttpParams queryParams = new HttpParams()
+	.set("custId", 1234);
+```
+
 ## Async pipe
 If data is a promise:
 ```html
@@ -487,7 +493,7 @@ If data is an observable:
 </ul>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNDgxMjE3NiwtMTAxMjAzMzMzOSwtMT
-c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
-NSwtNzYzNjE4OTMyXX0=
+eyJoaXN0b3J5IjpbLTY3NjA4ODc3LC0xMDEyMDMzMzM5LC0xNz
+YwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOTQyODU1
+LC03NjM2MTg5MzJdfQ==
 -->
