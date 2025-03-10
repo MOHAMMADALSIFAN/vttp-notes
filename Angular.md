@@ -608,8 +608,18 @@ export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: Route
 }
 ```
 
-Need to specify
+Need to specify in the routes:
+```ts
+{ path: 'customers', component: CustomerListComponent, canActivate: [checkIfAuthenticated ]}
+```
+
+## CanDeactivate
+```ts
+export const hasSaved: CanDeactivateFn<OrderFormComponent> = 
+	(orderForm: OrderFormComponent, route: ActivatedRouteSnapshot, state: routerStateSnapshot) => {
+	
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzcwMTY3OTUsLTE4MzQ3OTc3NjQsLT
-E4NDQ3Njc1OTRdfQ==
+eyJoaXN0b3J5IjpbLTcyMTQ0NzgyMCwtMTgzNDc5Nzc2NCwtMT
+g0NDc2NzU5NF19
 -->
