@@ -409,6 +409,14 @@ this.form.reset({
 //Reset individual controls
 this.form.get('username').reset();
 ```
+
+# Observable
+Operators within pipe: 
+1. filter -- filter data stream
+2. map
+3. tap -- observe the data stream. Used to perform side-effects
+4. take -- take the first n values
+5. takeWhile -- continue taking data until predica
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbLTY2NjI5MzA5MCwtNzYzNjE4OTMyXX0=
 -->
