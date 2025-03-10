@@ -436,8 +436,9 @@ ngOnDestroy() {
 ```
 
 # Promise
-
+const
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjA5MTIxNyw0OTc0MjU4MSwtMTY4Nz
-Q1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkzMl19
+eyJoaXN0b3J5IjpbLTEzNzAxMDkwNTQsLTE3NjA5MTIxNyw0OT
+c0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkz
+Ml19
 -->
