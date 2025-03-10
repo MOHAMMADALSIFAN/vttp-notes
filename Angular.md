@@ -499,8 +499,11 @@ If data is an observable:
 	</li>
 </ul>
 ```
+
+# Cross Origin
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODQwOTQ1MSwtMTAxMjAzMzMzOSwtMT
-c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
-NSwtNzYzNjE4OTMyXX0=
+eyJoaXN0b3J5IjpbMTU2ODE0MjcwNiwxMTM4NDA5NDUxLC0xMD
+EyMDMzMzM5LC0xNzYwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4
+NjIsMTUzOTQyODU1LC03NjM2MTg5MzJdfQ==
 -->
