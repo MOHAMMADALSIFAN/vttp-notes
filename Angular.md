@@ -629,6 +629,5 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> =
 { path: 'order', component: OrderFormComponent, canDeactivate: [hasSaved ]}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNTU2MTIyLC0xODM0Nzk3NzY0LC0xOD
-Q0NzY3NTk0XX0=
+eyJoaXN0b3J5IjpbNTcwNTU2MTIyXX0=
 -->
