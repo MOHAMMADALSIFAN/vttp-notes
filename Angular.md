@@ -452,9 +452,15 @@ callMe
 
 # HTTP Requests
 ```ts
-this.sub$ = this.http.get<User[]>
+this.sub$ = this.http.get<User[]>(url)
+	.subscribe({
+		next: (data) => { console.info(data[0].name) },
+		error: (err HttpErrorResponse) => { console.error(err) },
+		complete: () => {this.sub$.unsubscribe() }
+	})
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ3NjE1NiwtMTc2MDkxMjE3LDQ5Nz
-QyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1NSwtNzYzNjE4OTMy
-XX0=
+eyJoaXN0b3J5IjpbLTEwMTIwMzMzMzksLTE3NjA5MTIxNyw0OT
+c0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkz
+Ml19
 -->
