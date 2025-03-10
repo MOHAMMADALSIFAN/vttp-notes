@@ -436,14 +436,21 @@ ngOnDestroy() {
 ```
 
 # Promise
+Provider:
 ```ts
 const callMe = new Promise((resolve, reject) => {
 	resolve(data);
 	reject(error);
 }
 ```
+Consumer:
+```ts
+callMe
+	.then((data) => { })
+	.catch((err) => { })
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA5MDE4NjMsLTE3NjA5MTIxNyw0OT
+eyJoaXN0b3J5IjpbLTE3MTYwNjg4ODIsLTE3NjA5MTIxNyw0OT
 c0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkz
 Ml19
 -->
