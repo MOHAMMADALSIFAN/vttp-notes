@@ -459,8 +459,10 @@ this.sub$ = this.http.get<User[]>(url)
 		complete: () => {this.sub$.unsubscribe() }
 	})
 ```
+```ts
+lastValueFrom(this.http.get<
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTIwMzMzMzksLTE3NjA5MTIxNyw0OT
-c0MjU4MSwtMTY4NzQ1Nzg2MiwxNTM5NDI4NTUsLTc2MzYxODkz
-Ml19
+eyJoaXN0b3J5IjpbLTk2MjE4MDc4MywtMTAxMjAzMzMzOSwtMT
+c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
+NSwtNzYzNjE4OTMyXX0=
 -->
