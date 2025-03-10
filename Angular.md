@@ -460,9 +460,12 @@ this.sub$ = this.http.get<User[]>(url)
 	})
 ```
 ```ts
-lastValueFrom(this.http.get<
+lastValueFrom(this.http.get<User[]>(url)
+	.then((data) => {data.name})
+	.catch((err: HttpErrorResponse) => { ... })
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjE4MDc4MywtMTAxMjAzMzMzOSwtMT
-c2MDkxMjE3LDQ5NzQyNTgxLC0xNjg3NDU3ODYyLDE1Mzk0Mjg1
-NSwtNzYzNjE4OTMyXX0=
+eyJoaXN0b3J5IjpbNDI1ODU5MzQ3LC0xMDEyMDMzMzM5LC0xNz
+YwOTEyMTcsNDk3NDI1ODEsLTE2ODc0NTc4NjIsMTUzOTQyODU1
+LC03NjM2MTg5MzJdfQ==
 -->
