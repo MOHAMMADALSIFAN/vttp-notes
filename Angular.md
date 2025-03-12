@@ -650,11 +650,16 @@ create table files (
 ## File upload in Angular
 *See notes for another way to do file uploads by accessing the element in the DOM*
 
+### Multipart form data
+Content-Type: multipart/form-data; boundary=...
+Boundary divides 
+
+### Frontend
 ***INSERT CODE HERE***
 
-### Multipart form data
+### Backend
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY2MDIxOTksLTE5MTgwMjcyMzcsNT
-cwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbNTU4ODc2ODUsLTE5MTgwMjcyMzcsNTcwNT
+U2MTIyXX0=
 -->
