@@ -683,8 +683,10 @@ public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @Reque
 ```
 
 ## Retrieving file data
+```java
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI4NjEzNzMsLTE5MTgwMjcyMzcsNT
+eyJoaXN0b3J5IjpbLTEwNTk2ODAxODMsLTE5MTgwMjcyMzcsNT
 cwNTU2MTIyXX0=
 -->
