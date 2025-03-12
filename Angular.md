@@ -698,8 +698,15 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 	}, id
 )
 ```
-### Multiple rows (u
+### Multiple rows (using `ResultSetExtractor`)
+```java
+List<FileData> opt = template.query("select * from files where name like ?", params,
+	(rs: ResultSet) -> {
+		List<FileData> list = new LinkedList<>();
+		
+	}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDEwODUwNywtMTkxODAyNzIzNyw1Nz
-A1NTYxMjJdfQ==
+eyJoaXN0b3J5IjpbLTE3ODUzMjIxMjksLTE5MTgwMjcyMzcsNT
+cwNTU2MTIyXX0=
 -->
