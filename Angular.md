@@ -670,10 +670,17 @@ spring.servlet.multipart.file-size-threshold=1MB
 ```java
 @PostMapping(consumes=MediaType.MULTIPART_FORM_DATA)
 public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @RequestPart String name, @RequestPart String email) {
-	String name = file.get
+	// Getting information about the uploaded file
+	String name = file.getName();
+	String originalName = file.getOriginalFileName();
+	String mediaType = file.getContentType();
+	InputStream is = file.getInputStream();
+
+	template.update("insert into file(..., content) values(...,?)")
+	...
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzU3NzA0LC0xOTE4MDI3MjM3LDU3MD
-U1NjEyMl19
+eyJoaXN0b3J5IjpbLTE5NzI5MTUyMjgsLTE5MTgwMjcyMzcsNT
+cwNTU2MTIyXX0=
 -->
