@@ -641,8 +641,11 @@ create table files (
 ```
 
 ```html
-<form method="POST" actio
+<form method="POST" action="/upload" enctype="multipart/form-data">
+	<input type="file" name="img-file" accept="image/*">
+	<button type="submit">Upload</button>
+</form>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTczNTY2Myw1NzA1NTYxMjJdfQ==
+eyJoaXN0b3J5IjpbLTIyNjUzMTY4Nyw1NzA1NTYxMjJdfQ==
 -->
