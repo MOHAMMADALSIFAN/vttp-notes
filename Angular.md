@@ -663,8 +663,11 @@ spring.servlet.multipart.enabled=true
 # Maximum size of a file
 spring.servlet.multipart.max-file-size=200MB
 # maximum request size for multiple file uploads
+spring.servlet.multipart.max-request-size=300MB
+# Files exceeding this size will be written to disk temporarily instead of residing memory during processing. 
+spring.servlet.multipart.file-size-threshold=1MB
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjkxMTU3NywtMTkxODAyNzIzNyw1Nz
+eyJoaXN0b3J5IjpbMTM5NTU1NTEzNSwtMTkxODAyNzIzNyw1Nz
 A1NTYxMjJdfQ==
 -->
