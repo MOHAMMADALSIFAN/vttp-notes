@@ -631,6 +631,14 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> =
 
 # Blob data
 Different sizes: TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB
+```sql
+create table files (
+	id int auto_increment,
+	filename varchar(64) not null,
+	media_type varchar(128) not null,
+	content blob not null,
+	primary key (id)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEyNzM0MDIsNTcwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbNjI3OTg2NTI2LDU3MDU1NjEyMl19
 -->
