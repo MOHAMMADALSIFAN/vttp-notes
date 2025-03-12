@@ -731,10 +731,9 @@ List<FileData> opt = template.query("select * from files where name like ?", par
 <dependency>
 	<groupId>javax.xml.bind</groupId>
 	<artifactId>jaxb-api</artifactId>
-	<version> latest version </version>
+	<version>2.4.0-b180830</version>
 </dependency>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzNDcyMDQyLDEzMzU5NDU2OTUsLTE5MT
-gwMjcyMzcsNTcwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbLTEwNDIzNjMyNjhdfQ==
 -->
