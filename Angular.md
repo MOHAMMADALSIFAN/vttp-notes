@@ -668,6 +668,7 @@ spring.servlet.multipart.max-request-size=300MB
 spring.servlet.multipart.file-size-threshold=1MB
 ```
 ```java
+// The encoding type here must be the same as the one in the HTML doc and the specified Content Type
 @PostMapping(consumes=MediaType.MULTIPART_FORM_DATA)
 public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @RequestPart String name, @RequestPart String email) {
 	// Getting information about the uploaded file
@@ -681,6 +682,6 @@ public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @Reque
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI5MTUyMjgsLTE5MTgwMjcyMzcsNT
+eyJoaXN0b3J5IjpbLTE2OTQzODQxOTYsLTE5MTgwMjcyMzcsNT
 cwNTU2MTIyXX0=
 -->
