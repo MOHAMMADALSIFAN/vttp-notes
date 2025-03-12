@@ -628,6 +628,9 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> =
 ```ts
 { path: 'order', component: OrderFormComponent, canDeactivate: [hasSaved ]}
 ```
+
+# Blob data
+Different sizes: TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbLTE0MzEyNzM0MDIsNTcwNTU2MTIyXX0=
 -->
