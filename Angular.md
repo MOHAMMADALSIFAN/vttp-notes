@@ -658,8 +658,13 @@ Boundary divides
 ***INSERT CODE HERE***
 
 ### Backend
-
+```properties
+spring.servlet.multipart.enabled=true
+# Maximum size of a file
+spring.servlet.multipart.max-file-size=200MB
+# maximum request size for multiple file uploads
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4ODc2ODUsLTE5MTgwMjcyMzcsNTcwNT
-U2MTIyXX0=
+eyJoaXN0b3J5IjpbLTk5NjkxMTU3NywtMTkxODAyNzIzNyw1Nz
+A1NTYxMjJdfQ==
 -->
