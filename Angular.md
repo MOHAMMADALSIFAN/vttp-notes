@@ -667,7 +667,13 @@ spring.servlet.multipart.max-request-size=300MB
 # Files exceeding this size will be written to disk temporarily instead of residing memory during processing. 
 spring.servlet.multipart.file-size-threshold=1MB
 ```
+```java
+@PostMapping(consumes=MediaType.MULTIPART_FORM_DATA)
+public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @RequestPart String name, @RequestPart String email) {
+	String name = file.get
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTU1NTEzNSwtMTkxODAyNzIzNyw1Nz
-A1NTYxMjJdfQ==
+eyJoaXN0b3J5IjpbLTE4MzU3NzA0LC0xOTE4MDI3MjM3LDU3MD
+U1NjEyMl19
 -->
