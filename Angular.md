@@ -720,8 +720,21 @@ List<FileData> opt = template.query("select * from files where name like ?", par
 ```xml
 <dependency>
 	<groupId>com.amazonaws</groupId>
+	<artifactId>aws-java-sdk-s3</artifactId>
+	<version> latest version </version>
+</dependency>
+<dependency>
+	<groupId>org.glassfish.jaxb</groupId>
+	<artifactId>jaxb-runtime</artifactId>
+	<version> latest version </version>
+</dependency>
+<dependency>
+	<groupId>javax.xml.bind</groupId>
+	<artifactId>jaxb-api</artifactId>
+	<version> latest version </version>
+</dependency>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NzU2MTI1MiwxMzM1OTQ1Njk1LC0xOT
-E4MDI3MjM3LDU3MDU1NjEyMl19
+eyJoaXN0b3J5IjpbNDMzNDcyMDQyLDEzMzU5NDU2OTUsLTE5MT
+gwMjcyMzcsNTcwNTU2MTIyXX0=
 -->
