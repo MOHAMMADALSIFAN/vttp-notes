@@ -639,6 +639,10 @@ create table files (
 	content blob not null,
 	primary key (id)
 ```
+
+```html
+<form method="POST" actio
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3OTg2NTI2LDU3MDU1NjEyMl19
+eyJoaXN0b3J5IjpbMTcyOTczNTY2Myw1NzA1NTYxMjJdfQ==
 -->
