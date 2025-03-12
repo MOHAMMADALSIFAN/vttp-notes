@@ -703,10 +703,18 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 List<FileData> opt = template.query("select * from files where name like ?", params,
 	(rs: ResultSet) -> {
 		List<FileData> list = new LinkedList<>();
-		
-	}
+		while (rs.next()) {
+			FileData file = new FileData();
+			file.setName(rs.getString("name");
+			file.setContentType(rs.getString("media_type");
+			file.setContent(rs.getBytes("content"));
+			list.add(file);
+		}
+		return list;
+	}, "%dog%"
+)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODUzMjIxMjksLTE5MTgwMjcyMzcsNT
-cwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbMTMzNTk0NTY5NSwtMTkxODAyNzIzNyw1Nz
+A1NTYxMjJdfQ==
 -->
