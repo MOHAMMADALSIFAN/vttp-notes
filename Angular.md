@@ -648,13 +648,9 @@ create table files (
 ```
 
 ## File upload in Angular
-### Old w
-```html
-<form [formGroup]="form" (ngSubmit)="upload()">
-	<input type="file" accept="image/*" #file>
-</form>
-```
+*See notes for another way to do file uploads by accessing the element in the DOM*
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODQ1OTMyMiwtMTkxODAyNzIzNyw1Nz
-A1NTYxMjJdfQ==
+eyJoaXN0b3J5IjpbODkzMjEzNzU4LC0xOTE4MDI3MjM3LDU3MD
+U1NjEyMl19
 -->
