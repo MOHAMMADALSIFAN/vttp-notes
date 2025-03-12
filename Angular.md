@@ -683,6 +683,7 @@ public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @Reque
 ```
 
 ## Retrieving file data
+### One file (using `ResultSetExtractor`)
 ```java
 Optional<FileData> opt = template.query("select * from files where id = ?", params, 
 	(rs: ResultSet) -> {
@@ -691,9 +692,14 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 		FileData file = new FileData();
 		file.setName(rs.getString("name"));
 		file.setContentType(rs.getString("media_type");
-		fi
+		file.setContent(rs.getBytes("content"));
+		...
+		return Optional.of(file);
+	}, id
+)
 ```
+### Multiple rows (u
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc2OTkxNDUsLTE5MTgwMjcyMzcsNT
-cwNTU2MTIyXX0=
+eyJoaXN0b3J5IjpbMTIxNDEwODUwNywtMTkxODAyNzIzNyw1Nz
+A1NTYxMjJdfQ==
 -->
