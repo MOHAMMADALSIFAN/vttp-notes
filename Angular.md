@@ -714,7 +714,14 @@ List<FileData> opt = template.query("select * from files where name like ?", par
 	}, "%dog%"
 )
 ```
+
+# Object Storage (S3 Buckets)
+## Setup
+```xml
+<dependency>
+	<groupId>com.amazonaws</groupId>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTk0NTY5NSwtMTkxODAyNzIzNyw1Nz
-A1NTYxMjJdfQ==
+eyJoaXN0b3J5IjpbLTQ0NzU2MTI1MiwxMzM1OTQ1Njk1LC0xOT
+E4MDI3MjM3LDU3MDU1NjEyMl19
 -->
