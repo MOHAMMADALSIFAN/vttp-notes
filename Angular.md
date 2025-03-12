@@ -650,7 +650,10 @@ create table files (
 ## File upload in Angular
 *See notes for another way to do file uploads by accessing the element in the DOM*
 
+***INSERT CODE HERE***
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzMjEzNzU4LC0xOTE4MDI3MjM3LDU3MD
-U1NjEyMl19
+eyJoaXN0b3J5IjpbMTQxNDg2Njk4MCwtMTkxODAyNzIzNyw1Nz
+A1NTYxMjJdfQ==
 -->
