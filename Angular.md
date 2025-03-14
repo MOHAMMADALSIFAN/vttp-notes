@@ -597,8 +597,13 @@ export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: Route
 
 ## `CanDeactivate`
 ```ts
-export const hasSaved: CanDeactivateFn<OrderFormComponent> = 
+export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFormComponent, 
+	route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+	
+	if (orderForm.form.dirty)
+		return confirm('You have not saved the order.\nAre you sure you want to leave?>
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQwMjM2NTE5LDE5NjI2ODY1NDJdfQ==
+eyJoaXN0b3J5IjpbLTExOTg1MTA0ODcsMTk2MjY4NjU0Ml19
 -->
