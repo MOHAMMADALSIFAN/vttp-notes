@@ -532,6 +532,11 @@ public WebMvcConfigurer corsConfigurer() {
 }
 ```
 
+## Proxying
+1. Serve Angular app with `--proxy-config <file>` flag
+2. Configure the application configuration by adding the following option:
+	
+
 # Routing
 Add import into module (auto-generated if routing is set to true during initialisation):
 ```ts
@@ -609,5 +614,5 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 {path:..., canDeactivate: [hasSaved]}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODIzNDc4OTAsMTk2MjY4NjU0Ml19
+eyJoaXN0b3J5IjpbLTEyMTY3NzIxNTIsMTk2MjY4NjU0Ml19
 -->
