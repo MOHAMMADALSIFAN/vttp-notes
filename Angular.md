@@ -582,8 +582,15 @@ RouterModule.forRoot(appRoutes, {bindToComponentInputs: true});
 # Route guards
 ## `CanActivate`
 ```ts
-e
+export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+	const authSvc = inject(AuthService);
+	const router = inject(Router);
+	
+	if (authSvc.isAuthenticated())
+		return true;
+	return router.parseUrl('/help')
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2ODU0MzIzNywxOTYyNjg2NTQyXX0=
+eyJoaXN0b3J5IjpbLTE2NzI0NTIxMTQsMTk2MjY4NjU0Ml19
 -->
