@@ -541,13 +541,26 @@ public WebMvcConfigurer corsConfigurer() {
 			"<app_name>": {
 				"architect": {
 					"serve": {
-						"builder": "@angular-devkit/build-angular:dev-ser
+						"builder": "@angular-devkit/build-angular:dev-server",
+						"options": {
+							"proxyConfig": "proxy.config.json"
+						}
 					}
 				}
 			}
 		}
 	}
 	```
+
+Proxy file:
+```json
+{
+	"/api": {
+		"target": "http://localhost:8080",
+		"secure": false
+	}
+}
+```
 
 # Routing
 Add import into module (auto-generated if routing is set to true during initialisation):
@@ -626,5 +639,5 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 {path:..., canDeactivate: [hasSaved]}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2ODc2NDA4LDE5NjI2ODY1NDJdfQ==
+eyJoaXN0b3J5IjpbMTc3NzY4MjEzMiwxOTYyNjg2NTQyXX0=
 -->
