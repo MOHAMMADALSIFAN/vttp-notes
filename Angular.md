@@ -596,6 +596,9 @@ export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: Route
 ```
 
 ## `CanDeactivate`
+```ts
+export const hasSaved: CanDeactivateFn<OrderFormComponent> = 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMyNzAwNTIsMTk2MjY4NjU0Ml19
+eyJoaXN0b3J5IjpbNjQwMjM2NTE5LDE5NjI2ODY1NDJdfQ==
 -->
