@@ -639,7 +639,8 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 {path:..., canDeactivate: [hasSaved]}
 ```
 
+# Blob data
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbNTY1OTA1MTIyLC04OTQ0OTk0MDhdfQ==
 -->
