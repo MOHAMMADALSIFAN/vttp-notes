@@ -640,7 +640,10 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 ```
 
 # Blob data
+mysql types: tinyblob, blob, mediumblob, longblob
+
+## File upload
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY1OTA1MTIyLC04OTQ0OTk0MDhdfQ==
+eyJoaXN0b3J5IjpbLTQyNzYyMjczMSwtODk0NDk5NDA4XX0=
 -->
