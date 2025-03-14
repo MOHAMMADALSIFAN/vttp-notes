@@ -601,9 +601,13 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 	route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
 	
 	if (orderForm.form.dirty)
-		return confirm('You have not saved the order.\nAre you sure you want to leave?>
+		return confirm('You have not saved the order.\nAre you sure you want to leave?')
+
+	return true;
 }
+
+{path:..., canDeactivate: [hasSaved]}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg1MTA0ODcsMTk2MjY4NjU0Ml19
+eyJoaXN0b3J5IjpbLTExODIzNDc4OTAsMTk2MjY4NjU0Ml19
 -->
