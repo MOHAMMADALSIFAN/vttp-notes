@@ -580,7 +580,10 @@ RouterModule.forRoot(appRoutes, {bindToComponentInputs: true});
 ```
 
 # Route guards
-
+## `CanActivate`
+```ts
+e
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjY4NjU0Ml19
+eyJoaXN0b3J5IjpbLTk2ODU0MzIzNywxOTYyNjg2NTQyXX0=
 -->
