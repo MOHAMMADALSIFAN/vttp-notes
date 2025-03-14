@@ -588,9 +588,14 @@ export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: Route
 	
 	if (authSvc.isAuthenticated())
 		return true;
+	// Create a UrlTree to navigate to /help
 	return router.parseUrl('/help')
 }
+
+{path: 'customers', component: CustomerListComponent, canActivate: [checkIfAuthenticated]}
 ```
+
+## `CanDeactivate`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzI0NTIxMTQsMTk2MjY4NjU0Ml19
+eyJoaXN0b3J5IjpbLTEwNDMyNzAwNTIsMTk2MjY4NjU0Ml19
 -->
