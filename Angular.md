@@ -532,208 +532,55 @@ public WebMvcConfigurer corsConfigurer() {
 }
 ```
 
-# Router
-Import: `RouterModule.forRoot(appRoutes)`
-
+# Routing
+Add import into module (auto-generated if routing is set to true during initialisation):
 ```ts
+import { RouterModule } from '@angular/router';
+
 const appRoutes: Routes = [
 	{path: '', component: HomeComponent},
-	{path: 'login', component: LoginComponent},
-	{path: "**", redirectTo: '/', pathMatch: 'full'}
-];
+	{path: 'home/:id', component: HomeComponent},
+	{path: '**', redirectTo: '/', pathMatch: 'full'}
+]
+
+@NgModule({
+	imports: [
+		...,
+		RouterModule.forRoot({appRoutes})
+	]
+})
 ```
+
+`router-outlet` is used to demarcate where in the app shell the component should be displayed. 
+
+## Navigating routes
 ```html
-<router-outlet></router-outlet>
+<a [routerLink]="['/home']">Home</a>
+<a [routerLink]="['/home', id]">Home</a>
+<a [routerLink]="['/home', id]" [queryParams]="{view: 'simple'}">
+	>Home</a>
 ```
-## Changing routes
-1. Use `routerLink` instead of `href`
-	```html
-	<a [routerLink]="['/home']">Home</a>
-	```
-2. Changing routes programmatically
-	```ts
-	this.router.navigate(['/home'])
-	```
-## Parameterised routes & query parameters
-Parameterised routes
+
 ```ts
-{ path: 'customer/:custId', component: CustomerDetailComponent }
-```
-```html
-<a *ngFor="let c of customers" [routerLink]="['/customer', c.custId ]">
-	{{c.name}}
-</a>
+this.router.navigate(['/home']);
+this.router.navigate(['/home', id]);
+this.router.navigate(['/home', id], {queryParams: {view: 'simple'});
 ```
 
-Query parameters:
+## Accessing routes
 ```ts
-this.router.navigate(['/customer', custId],
-	{ queryParams: { view: 'simple' } )
+this.activatedRoute.snapshot.params.id;
+this.activatedRoute.snapshot.queryParams.view;
 ```
-```html
-<a *ngFor="let c of customers" [routerLink]="['/customer', c.custId ]"
-	[queryParams]="{ view: 'simple' }">
-	{{c.name}}
-</a>
-```
-
-Retrieve data using:
+Another method is to use `@Input()`.
 ```ts
-route = inject(ActivatedRoute);
-this.route.snapshot.params.custId;
-this.route.snapshot.queryParams.view
+@Input() id: string
+
+RouterModule.forRoot(appRoutes, {bindToComponentInputs: true});
 ```
 
-Can also bind route parameters to `@Input()`
-e.g.
-```ts
-@Input()
-custId: string
+# Route guards
 
-// In AppModule
-RouterModule.forRoot(appRoutes, { bindToComponentInputs: true })
-```
-
-# Route Guards
-## CanActivate
-```ts
-export const checkIfAuthenticated = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
-	const authSvc = inject(AuthenticationService);
-	const router = inject(Router)
-
-	if (authSvc.isAuthenticated()) {
-		return true
-	}
-	return router.parseUrl("/help");
-}
-```
-
-Need to specify in the routes:
-```ts
-{ path: 'customers', component: CustomerListComponent, canActivate: [checkIfAuthenticated ]}
-```
-
-## CanDeactivate
-```ts
-export const hasSaved: CanDeactivateFn<OrderFormComponent> = 
-	(orderForm: OrderFormComponent, route: ActivatedRouteSnapshot, state: routerStateSnapshot) => {
-	
-	if (orderForm.form.dirty)
-		// will return true or false depending on user input
-		return confirm('You have not savedthe order.\nAre you sure you want to leave?);
-	
-	return true;
-}
-```
-```ts
-{ path: 'order', component: OrderFormComponent, canDeactivate: [hasSaved ]}
-```
-
-# Blob data
-Different sizes: TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB
-```sql
-create table files (
-	id int auto_increment,
-	filename varchar(64) not null,
-	media_type varchar(128) not null,
-	content blob not null,
-	primary key (id)
-```
-
-```html
-<form method="POST" action="/upload" enctype="multipart/form-data">
-	<input type="file" name="img-file" accept="image/*">
-	<button type="submit">Upload</button>
-</form>
-```
-
-## File upload in Angular
-*See notes for another way to do file uploads by accessing the element in the DOM*
-
-### Multipart form data
-Content-Type: multipart/form-data; boundary=...
-Boundary divides 
-
-### Frontend
-***INSERT CODE HERE***
-
-### Backend
-```properties
-spring.servlet.multipart.enabled=true
-# Maximum size of a file
-spring.servlet.multipart.max-file-size=200MB
-# maximum request size for multiple file uploads
-spring.servlet.multipart.max-request-size=300MB
-# Files exceeding this size will be written to disk temporarily instead of residing memory during processing. 
-spring.servlet.multipart.file-size-threshold=1MB
-```
-```java
-// The encoding type here must be the same as the one in the HTML doc and the specified Content Type
-@PostMapping(consumes=MediaType.MULTIPART_FORM_DATA)
-public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @RequestPart String name, @RequestPart String email) {
-	// Getting information about the uploaded file
-	String name = file.getName();
-	String originalName = file.getOriginalFileName();
-	String mediaType = file.getContentType();
-	InputStream is = file.getInputStream();
-
-	template.update("insert into file(..., content) values(...,?)")
-	...
-}
-```
-
-## Retrieving file data
-### One file (using `ResultSetExtractor`)
-```java
-Optional<FileData> opt = template.query("select * from files where id = ?", params, 
-	(rs: ResultSet) -> {
-		if (!rs.next())
-			return Optional.empty();
-		FileData file = new FileData();
-		file.setName(rs.getString("name"));
-		file.setContentType(rs.getString("media_type");
-		file.setContent(rs.getBytes("content"));
-		...
-		return Optional.of(file);
-	}, id
-)
-```
-### Multiple rows (using `ResultSetExtractor`)
-```java
-List<FileData> opt = template.query("select * from files where name like ?", params,
-	(rs: ResultSet) -> {
-		List<FileData> list = new LinkedList<>();
-		while (rs.next()) {
-			FileData file = new FileData();
-			file.setName(rs.getString("name");
-			file.setContentType(rs.getString("media_type");
-			file.setContent(rs.getBytes("content"));
-			list.add(file);
-		}
-		return list;
-	}, "%dog%"
-)
-```
-
-# Object Storage (S3 Buckets)
-## Setup
-```xml
-<dependency>
-	<groupId>com.amazonaws</groupId>
-	<artifactId>aws-java-sdk-s3</artifactId>
-	<version> latest version </version>
-</dependency>
-<dependency>
-	<groupId>org.glassfish.jaxb</groupId>
-	<artifactId>jaxb-runtime</artifactId>
-	<version> latest version </version>
-</dependency>
-<dependency>
-	<groupId>javax.xml.bind</groupId>
-	<artifactId>jaxb-api</artifactId>
-	<version>2.4.0-b180830</version>
-</dependency>
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDIzNjMyNjhdfQ==
+eyJoaXN0b3J5IjpbMTk2MjY4NjU0Ml19
 -->
