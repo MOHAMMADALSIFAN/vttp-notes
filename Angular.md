@@ -685,11 +685,24 @@ export class FileUploadComponent {
 		this.http.post(url, formData);
 	}
 
-	onImageChange(eve
+	onImageChange(event: Event) {
+		this.isLoading = true;
+		const input = event.target as HTMLInputElement;
+		if (input.files && input.files.length > 0) {
+			const file = input.files[0];
+			const reader = new FileReader();
+			reader.onload = () => {
+				this.dataUri = reader.result as string;
+				this.isLoading = false;
+			}
+			reader.readAsDataURL(file);
+			
+		}
+	}
 }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDE0NjIyNiwtNDI3NjIyNzMxLC04OT
-Q0OTk0MDhdfQ==
+eyJoaXN0b3J5IjpbOTY0MjkyMDUxLC00Mjc2MjI3MzEsLTg5ND
+Q5OTQwOF19
 -->
