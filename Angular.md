@@ -757,7 +757,13 @@ List<FileData> files = template.query("select * from files where name like ?",
 	}, "%dog%"
 )
 ```
+Sending over HTTP:
+```java
+byte[] image
+String encodedString = Base64.getEncoder()
+	en
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDE5NjY4MSw5NjQyOTIwNTEsLTQyNz
+eyJoaXN0b3J5IjpbMjAwNTE2Mjc0OCw5NjQyOTIwNTEsLTQyNz
 YyMjczMSwtODk0NDk5NDA4XX0=
 -->
