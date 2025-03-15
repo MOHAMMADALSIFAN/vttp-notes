@@ -743,9 +743,21 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 ```
 Multiple rows:
 ```java
-List<FileData> files = template.query("select * from files where name like ?",
+List<FileData> files = template.query("select * from files where name like ?", 
+	params, (rs: ResultSet) -> {
+		List<FileData> list = new LinkedList<>();
+		while (rs.next()) {
+			FileData file = new FileData();
+			file.setName(rs.getString("name"));
+			file.setContentType(rs.getString("media_type"));
+			file.setContent(rs.getBytes("content");
+			list.add(file);
+		}
+		return list;
+	}, "%dog%"
+)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTk3MTk0LDk2NDI5MjA1MSwtNDI3Nj
-IyNzMxLC04OTQ0OTk0MDhdfQ==
+eyJoaXN0b3J5IjpbMjEzNzI0ODkzMyw5NjQyOTIwNTEsLTQyNz
+YyMjczMSwtODk0NDk5NDA4XX0=
 -->
