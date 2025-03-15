@@ -713,11 +713,19 @@ dataUriToBlob(dataUri: string): Blob {
 	const ab = new ArrayBuffer(byteString.length);
 	const ia = Uint8Array(ab);
 	for (let i = 0; i < byteString.length; i++) {
-	
+		ia[i] = byteString.charCodeAt(i);
+	}
+	return new Blob([ia], {type: mimeType});
 }
 ```
 
+HTML page:
+```html
+<form enctype="multipart/form-data">
+	<input type="file" 
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzczNTk3NSw5NjQyOTIwNTEsLTQyNz
-YyMjczMSwtODk0NDk5NDA4XX0=
+eyJoaXN0b3J5IjpbLTEzNzg0MDk5NjYsOTY0MjkyMDUxLC00Mj
+c2MjI3MzEsLTg5NDQ5OTQwOF19
 -->
