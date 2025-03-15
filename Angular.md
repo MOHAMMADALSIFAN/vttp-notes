@@ -673,13 +673,23 @@ export class FileUploadComponent {
 
 	upload() {
 		if (!this.dataUri) {
-			console.error
+			console.error("No image uploaded");
+			return;
 		}
+		
+		// Move this to service class
+		const formData = new FormData();
+		formData.set('comments', this.form.get('comments')?.value);
+		formData.set('picture', this.dataUritoBlob(this.dataUri));
+
+		this.http.post(url, formData);
 	}
+
+	onImageChange(eve
 }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTgwOTE1MSwtNDI3NjIyNzMxLC04OT
+eyJoaXN0b3J5IjpbLTMxNDE0NjIyNiwtNDI3NjIyNzMxLC04OT
 Q0OTk0MDhdfQ==
 -->
