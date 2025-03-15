@@ -761,9 +761,10 @@ Sending over HTTP:
 ```java
 byte[] image
 String encodedString = Base64.getEncoder()
-	en
+	encodeToString(image);
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTE2Mjc0OCw5NjQyOTIwNTEsLTQyNz
-YyMjczMSwtODk0NDk5NDA4XX0=
+eyJoaXN0b3J5IjpbODAyNDA2ODQsOTY0MjkyMDUxLC00Mjc2Mj
+I3MzEsLTg5NDQ5OTQwOF19
 -->
