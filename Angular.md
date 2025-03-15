@@ -645,9 +645,18 @@ mysql types: tinyblob, blob, mediumblob, longblob
 ## Template
 Application properties in Spring Boot:
 ```properties
-spring.servlet.multipar
+spring.servlet.multipart.enabled=true
+spring.servlet.multipart.max-file-size=100MB
+spring.servlet.multipart.max-request-size=200MB
+spring.servlet.multipart.file-size-threshold=1MB
+```
+
+Server:
+```java
+@PostMapping(consumes=MediaType.MULTIPART_FORM_DATA_VALUE)
+public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @RequestPart String name, @RequestPart String email)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDAxNzUyMTIsLTQyNzYyMjczMSwtOD
+eyJoaXN0b3J5IjpbLTEwMDExMDYyMTgsLTQyNzYyMjczMSwtOD
 k0NDk5NDA4XX0=
 -->
