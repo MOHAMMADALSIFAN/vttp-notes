@@ -764,7 +764,17 @@ String encodedString = Base64.getEncoder()
 	encodeToString(image);
 String payload = "data:image/png;base64," + encodedString;
 ```
+```java
+if (opt.isPresent()) {
+	FileData file = opt.get();
+	
+	HttpHeaders headers = new HttpHeaders();
+	headers.setContentType(MediaType.parseMediaType(file.getContentType()));
+
+	// Can
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzk5MDQ4OTAsOTY0MjkyMDUxLC00Mj
-c2MjI3MzEsLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbODc4MDg1OTA3LDk2NDI5MjA1MSwtNDI3Nj
+IyNzMxLC04OTQ0OTk0MDhdfQ==
 -->
