@@ -759,12 +759,12 @@ List<FileData> files = template.query("select * from files where name like ?",
 ```
 Sending over HTTP:
 ```java
-byte[] image
+byte[] image = ...;
 String encodedString = Base64.getEncoder()
 	encodeToString(image);
-
+String payload = "data:image/png;base64," + encodedString;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyNDA2ODQsOTY0MjkyMDUxLC00Mjc2Mj
-I3MzEsLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbLTEzNzk5MDQ4OTAsOTY0MjkyMDUxLC00Mj
+c2MjI3MzEsLTg5NDQ5OTQwOF19
 -->
