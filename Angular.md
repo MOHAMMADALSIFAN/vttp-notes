@@ -721,11 +721,17 @@ dataUriToBlob(dataUri: string): Blob {
 
 HTML page:
 ```html
-<form enctype="multipart/form-data">
-	<input type="file" 
+<form enctype="multipart/form-data" (submit)="upload()">
+	<input type="file" (change)="onImageChange($event)" accept="image/*">
+</form> 
+```
+## Retrieving BLOB
+### Single row
+```java
+Optional<
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzg0MDk5NjYsOTY0MjkyMDUxLC00Mj
-c2MjI3MzEsLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbMTEwMDIxNTM1Niw5NjQyOTIwNTEsLTQyNz
+YyMjczMSwtODk0NDk5NDA4XX0=
 -->
