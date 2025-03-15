@@ -728,7 +728,7 @@ HTML page:
 ## Retrieving BLOB
 Single row:
 ```java
-Optional<FileData> opt = template.query("select * from files where id = ?", params, (rs: ResultSet) -> {
+Optional<FileData> opt = template.query("select * from files where id = ?", params, (ResultSet rs) -> {
 	
 	if (!rs.next())
 		return Optional.empty();
@@ -744,7 +744,7 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 Multiple rows:
 ```java
 List<FileData> files = template.query("select * from files where name like ?", 
-	params, (rs: ResultSet) -> {
+	params, (ResultSet rs) -> {
 		List<FileData> list = new LinkedList<>();
 		while (rs.next()) {
 			FileData file = new FileData();
@@ -758,6 +758,6 @@ List<FileData> files = template.query("select * from files where name like ?",
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzI0ODkzMyw5NjQyOTIwNTEsLTQyNz
+eyJoaXN0b3J5IjpbMjA4MDE5NjY4MSw5NjQyOTIwNTEsLTQyNz
 YyMjczMSwtODk0NDk5NDA4XX0=
 -->
