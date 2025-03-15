@@ -704,10 +704,20 @@ export class FileUploadComponent {
 *Setting the form control value as the `dataUri` does not work. Will be undefined*
 
 ```ts
-dataUriToBlob(dataUri: string): Blob{
+dataUriToBlob(dataUri: string): Blob {
+	const [meta, base64Data] = dataUri.split(',');
+	const mimeMatch = meta.match(/:(.*?);/);
+
+	const mimetype = mimeMatch ? mimeMatch[1] : 'application/octet-stream';
+	const byteString = atob(base64Data);
+	const ab = new ArrayBuffer(byteString.length);
+	const ia = Uint8Array(ab);
+	for (let i = 0; i < byteString.length; i++) {
+	
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjIzMDg5Miw5NjQyOTIwNTEsLTQyNz
+eyJoaXN0b3J5IjpbMTU3MzczNTk3NSw5NjQyOTIwNTEsLTQyNz
 YyMjczMSwtODk0NDk5NDA4XX0=
 -->
