@@ -728,10 +728,21 @@ HTML page:
 ## Retrieving BLOB
 ### Single row
 ```java
-Optional<
+Optional<FileData> opt = template.query("select * from files where id = ?", params, (rs: ResultSet) -> {
+	
+	if (!rs.next())
+		return Optional.empty();
+	FileData file = new FileData();
+	file.setName(rs.getString("name"));
+	file.setContentType(rs.getString("media_type"));
+	file.setContent(rs.getBytes("content"));
+
+	return Optional.of(file);
+}, id
+
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDIxNTM1Niw5NjQyOTIwNTEsLTQyNz
-YyMjczMSwtODk0NDk5NDA4XX0=
+eyJoaXN0b3J5IjpbLTE4NzU2OTg5NzIsOTY0MjkyMDUxLC00Mj
+c2MjI3MzEsLTg5NDQ5OTQwOF19
 -->
