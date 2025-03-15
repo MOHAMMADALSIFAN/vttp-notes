@@ -726,7 +726,7 @@ HTML page:
 </form> 
 ```
 ## Retrieving BLOB
-### Single row
+Single row:
 ```java
 Optional<FileData> opt = template.query("select * from files where id = ?", params, (rs: ResultSet) -> {
 	
@@ -741,8 +741,11 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 }, id
 )
 ```
-
+Multiple rows:
+```java
+List<FileData> files = template.query("select * from files where name like ?",
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcxNjU0NzksOTY0MjkyMDUxLC00Mj
-c2MjI3MzEsLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbLTc0MTk3MTk0LDk2NDI5MjA1MSwtNDI3Nj
+IyNzMxLC04OTQ0OTk0MDhdfQ==
 -->
