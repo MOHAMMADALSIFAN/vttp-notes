@@ -639,11 +639,15 @@ export const hasSaved: CanDeactivateFn<OrderFormComponent> = (orderForm: OrderFo
 {path:..., canDeactivate: [hasSaved]}
 ```
 
-# Blob data
+# File upload
 mysql types: tinyblob, blob, mediumblob, longblob
 
-## File upload
-
+## Template
+Application properties in Spring Boot:
+```properties
+spring.servlet.multipar
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzYyMjczMSwtODk0NDk5NDA4XX0=
+eyJoaXN0b3J5IjpbLTIxMDAxNzUyMTIsLTQyNzYyMjczMSwtOD
+k0NDk5NDA4XX0=
 -->
