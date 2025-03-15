@@ -771,10 +771,11 @@ if (opt.isPresent()) {
 	HttpHeaders headers = new HttpHeaders();
 	headers.setContentType(MediaType.parseMediaType(file.getContentType()));
 
-	// Can
+	// Can choose either inline display or attachment download. For images, we typically want inline display
+	headers.setContentDispositionFormData("inline", file.getName());
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4MDg1OTA3LDk2NDI5MjA1MSwtNDI3Nj
-IyNzMxLC04OTQ0OTk0MDhdfQ==
+eyJoaXN0b3J5IjpbLTE2NDY0MDUzMDYsOTY0MjkyMDUxLC00Mj
+c2MjI3MzEsLTg5NDQ5OTQwOF19
 -->
