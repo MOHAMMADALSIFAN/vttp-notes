@@ -773,9 +773,12 @@ if (opt.isPresent()) {
 
 	// Can choose either inline display or attachment download. For images, we typically want inline display
 	headers.setContentDispositionFormData("inline", file.getName());
+
+return ResponseEntity.ok()
+	.headers(headers)
+	.body(file.getContent());
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY0MDUzMDYsOTY0MjkyMDUxLC00Mj
-c2MjI3MzEsLTg5NDQ5OTQwOF19
+eyJoaXN0b3J5IjpbLTU4MTA3MjQ2Nl19
 -->
