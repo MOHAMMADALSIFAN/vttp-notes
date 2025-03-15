@@ -663,9 +663,23 @@ public ResponseEntity<String> postUpload(@RequestPart MultipartFile file, @Reque
 
 template.update("insert into files(..., content) values (..., ?)", ..., is);
 ```
+Angular:
+```ts
+export class FileUploadComponent {
+	form!: FormGroup;
+	dataUri!: string;
+	blob!: Blob;
+	isLoading: boolean = false;
 
+	upload() {
+		if (!this.dataUri) {
+			console.error
+		}
+	}
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzE0OTY4NjMsLTQyNzYyMjczMSwtOD
-k0NDk5NDA4XX0=
+eyJoaXN0b3J5IjpbLTg2OTgwOTE1MSwtNDI3NjIyNzMxLC04OT
+Q0OTk0MDhdfQ==
 -->
