@@ -739,10 +739,10 @@ Optional<FileData> opt = template.query("select * from files where id = ?", para
 
 	return Optional.of(file);
 }, id
-
+)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzU2OTg5NzIsOTY0MjkyMDUxLC00Mj
+eyJoaXN0b3J5IjpbLTEyNTcxNjU0NzksOTY0MjkyMDUxLC00Mj
 c2MjI3MzEsLTg5NDQ5OTQwOF19
 -->
