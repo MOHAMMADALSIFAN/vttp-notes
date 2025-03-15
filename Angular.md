@@ -680,7 +680,7 @@ export class FileUploadComponent {
 		// Move this to service class
 		const formData = new FormData();
 		formData.set('comments', this.form.get('comments')?.value);
-		formData.set('picture', this.dataUritoBlob(this.dataUri));
+		formData.set('picture', this.dataUriToBlob(this.dataUri));
 
 		this.http.post(url, formData);
 	}
@@ -701,8 +701,13 @@ export class FileUploadComponent {
 	}
 }
 ```
+*Setting the form control value as the `dataUri` does not work. Will be undefined*
+
+```ts
+dataUriToBlob(dataUri: string): Blob{
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY0MjkyMDUxLC00Mjc2MjI3MzEsLTg5ND
-Q5OTQwOF19
+eyJoaXN0b3J5IjpbLTM2MjIzMDg5Miw5NjQyOTIwNTEsLTQyNz
+YyMjczMSwtODk0NDk5NDA4XX0=
 -->
