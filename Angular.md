@@ -952,9 +952,12 @@ export class TodoStore extends ComponentStore<TodoSlice> implements OnStoreInit 
 
 Updater
 ```ts
-readonly addNewTodo = this.updater<Todo>(
+readonly addNewTodo = this.updater<Todo>((slice: TodoSlice, todo:Todo) => ({
+	todos: [...slice.todos, todo]
+})
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODYzMzc2MCwtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTE0NTk1NDA4MzcsLTM1ODYzMzc2MCwtMj
+g1MTUxNjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcy
+NDY2XX0=
 -->
