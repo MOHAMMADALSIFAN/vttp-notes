@@ -969,13 +969,15 @@ readonly deleteTodoById = this.updater<string>(slice: TodoSlice, id: string) => 
 ```ts
 readonly getTodoSummaries = this.select<TodoSummary[]>((slice: TodoSlice) => slice.todos.map(
 	todo => ({
-	
-	})
+		id: todo.id,
+		name: todo.name,
+		count: todo.tasks.length
+	} as TodoSummary)
 ))
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODMwODMxODAsMTMzMDk2MTQyOSwtMT
+eyJoaXN0b3J5IjpbLTEzOTcyOTg2NjEsMTMzMDk2MTQyOSwtMT
 k1MTU3ODgwNCwtMTQ1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUx
 NTE2MDYsMTQ5MzczNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0Nj
 ZdfQ==
