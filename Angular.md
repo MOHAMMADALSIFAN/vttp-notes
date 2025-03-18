@@ -830,9 +830,14 @@ cart: '[cartId+username]'
 ```
 
 ### Methods
+Return the entire collection as an array
+```ts
+const carts: Cart[] = await this.cart.toArray()
 ```
-```
+
+<br>
+w
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NzYxNzU4LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTIwNjU5OTc2NiwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
