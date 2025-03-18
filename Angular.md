@@ -857,9 +857,14 @@ this.cart.filter(c => c.date > yesterday).toArray()
 
 this.cart.where('username').equals('fred').toArray()
 
-
+this.cart.where('username').equals('fred')
+	.and(c => c.date > yesterday)
+	.each(c => { ... })
 ```
+
+### CRUD
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Njg0NDA3NywtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbOTg1ODUzMjY4LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
