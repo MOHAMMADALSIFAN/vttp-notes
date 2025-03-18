@@ -343,6 +343,8 @@ In parent:
 To gain a reference to the child component instance:
 ```ts
 export class AppComponent implements AfterViewInit {
+	private cdr = inject(ChangeDetectorRef);
+	
 	// Query wth class
 	@ViewChild(RegistrationComponent)
 	regForm: RegistrationComponent
@@ -357,7 +359,7 @@ export class AppComponent implements AfterViewInit {
 
 		// can manipulate child component
 		this.childComponent.isImageVisible = true;
-		
+		this.cdr.detectChanges()
 	}
 
 	/**
@@ -998,6 +1000,6 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODE2MDg2MCwxOTI4Njg4NzIxLC0xMz
+eyJoaXN0b3J5IjpbLTc5NDAxOTQwNSwxOTI4Njg4NzIxLC0xMz
 U3OTgxNjE1XX0=
 -->
