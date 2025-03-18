@@ -354,6 +354,10 @@ export class AppComponent implements AfterViewInit {
 	ngAfterViewInit() { 
 		// Instead of using attribute binding, programmatically set the component attribute.
 		this.regForm.title = "New product"
+
+		// can manipulate child component
+		this.childComponent.isImageVisible = true;
+		
 	}
 
 	/**
@@ -994,5 +998,6 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODY4ODcyMSwtMTM1Nzk4MTYxNV19
+eyJoaXN0b3J5IjpbLTMxODE2MDg2MCwxOTI4Njg4NzIxLC0xMz
+U3OTgxNjE1XX0=
 -->
