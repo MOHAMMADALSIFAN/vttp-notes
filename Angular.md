@@ -834,10 +834,13 @@ Return the entire collection as an array
 ```ts
 const carts: Cart[] = await this.cart.toArray()
 ```
-
-<br>
-w
+Return a limited amount of documents, with offset
+```ts
+const carts: Cart[] = this.cart
+	.offset(50).limit(50)
+	toArray()
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjU5OTc2NiwtMjg1MTUxNjA2LDE0OT
+eyJoaXN0b3J5IjpbLTk4Njc1OTExMywtMjg1MTUxNjA2LDE0OT
 M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
