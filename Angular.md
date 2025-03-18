@@ -820,10 +820,15 @@ export class MyStore extends Dexie {
 }
 ```
 
-```
-cart: '
+```ts
+// Index multiple attributes (do not index blobs)
+cart: '++cartId, username'
+// Non-auto-incremented primary key
+cart: 'username'
+//Composite primary key
+cart: '[cartId+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODY3ODM4MSwtMjg1MTUxNjA2LDE0OT
+eyJoaXN0b3J5IjpbMTc5MTU5MjEwMSwtMjg1MTUxNjA2LDE0OT
 M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
