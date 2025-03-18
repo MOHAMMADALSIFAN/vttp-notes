@@ -1,6 +1,8 @@
 # Links
 [Accessing data](# Accessing data) -- access data using `@Input()` and `@Output()`
+
 [Directives](# Directives) -- using if, for, pipes etc.
+
 [Pipes](### Pipes)
 3. [Forms](# Forms)
 	- [Basic structure](# Basic structure)
@@ -992,5 +994,5 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzAxMDYwMTFdfQ==
+eyJoaXN0b3J5IjpbMTMxNjM4MDkwMSwtMTc3MDEwNjAxMV19
 -->
