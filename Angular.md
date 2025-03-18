@@ -873,7 +873,17 @@ await this.cart.bulkAdd(newCarts)
 
 Updating
 ```ts
+// will upsert
+const cart: Cart = await this.cart.get(12345)
+... // changes to cart
+await this.cart.put(cart)
+```
+
+Delete
+```ts
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwOTkyMDc0NywtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTE0NjEyMDQ2MjYsLTI4NTE1MTYwNiwxND
+kzNzM3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
 -->
