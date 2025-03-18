@@ -974,11 +974,13 @@ readonly getTodoSummaries = this.select<TodoSummary[]>((slice: TodoSlice) => sli
 		count: todo.tasks.length
 	} as TodoSummary)
 ))
+
+summary$: Observable<TodoSummary[]> = this.todoStore.getTodoSummaries()
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTcyOTg2NjEsMTMzMDk2MTQyOSwtMT
-k1MTU3ODgwNCwtMTQ1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUx
-NTE2MDYsMTQ5MzczNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0Nj
-ZdfQ==
+eyJoaXN0b3J5IjpbNTIzNDgzMDg3LDEzMzA5NjE0MjksLTE5NT
+E1Nzg4MDQsLTE0NTk1NDA4MzcsLTM1ODYzMzc2MCwtMjg1MTUx
+NjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX
+0=
 -->
