@@ -887,8 +887,13 @@ const deleteCount = await this.cart
 	.delete()
 ```
 
-
+## Example
+```ts
+export class CartService extends Dexie {
+	
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTA2MTA4LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTMzNTQzMTgyMiwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
