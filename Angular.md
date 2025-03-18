@@ -805,9 +805,19 @@ Database creation:
 ```ts
 import Dexie from 'dexie';
 
-export class MyStore extends Dexie
+export class MyStore extends Dexie {
+	//Table with Cart as
+	cart: Dexie.Table<Cart, number>;
+
+	constructor() {
+		super('MyStoreDB') // Database name
+		this.version(1).stores({
+			cart: '++cartId' // Collection name
+		})
+	}
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyODExNDA4OSwtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbNjU1MjYxNDYzLC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
