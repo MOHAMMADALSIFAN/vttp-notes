@@ -895,10 +895,12 @@ export class CartService extends Dexie {
 
 	addCart(cart: Cart) {
 		this.cart.add(cart)
-			.then(() => 
+			.then(() => onNew$.next(cart))
+		// Notify subscribers when there is a new cart
+	}
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3MTY0OTU2LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbLTM2NDg1NTM4MiwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
