@@ -1,5 +1,7 @@
 # Links
-[Forms](# Forms)
+1. [Accessing data](# Accessing data) -- access data using `@Input()` and `@Output()`
+2. [Directives](# Directives) -- using if, for, etc.
+3. 
 # Foundation Angular
 ## Commands
 
@@ -988,5 +990,6 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTUwNTYxOCw4MjgzNjYxNzJdfQ==
+eyJoaXN0b3J5IjpbLTE1NTg5MzcwODgsLTQ4OTUwNTYxOCw4Mj
+gzNjYxNzJdfQ==
 -->
