@@ -1,4 +1,6 @@
-# FoundationAngular
+# Links
+(Forms)[# Forms]
+# Foundation Angular
 ## Commands
 
 Generate a new Angular application:
@@ -986,8 +988,8 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDYzMzQ2MzIsNTIzNDgzMDg3LDEzMz
-A5NjE0MjksLTE5NTE1Nzg4MDQsLTE0NTk1NDA4MzcsLTM1ODYz
-Mzc2MCwtMjg1MTUxNjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMi
-wtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbODI4MzY2MTcyLC0xMzQ2MzM0NjMyLDUyMz
+Q4MzA4NywxMzMwOTYxNDI5LC0xOTUxNTc4ODA0LC0xNDU5NTQw
+ODM3LC0zNTg2MzM3NjAsLTI4NTE1MTYwNiwxNDkzNzM3ODUzLC
+0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
 -->
