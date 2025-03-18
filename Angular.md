@@ -780,7 +780,15 @@ return ResponseEntity.ok()
 }
 ```
 
+# Browser storage
+## Local/session storage
+```js
+localstorage.setItem(key, value)
+localstorage.getItem(key)
 
+loca
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTE2Njc0MTU2NTYsLTEzMTcwODAyMiwtNT
+gxMDcyNDY2XX0=
 -->
