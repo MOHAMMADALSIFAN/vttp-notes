@@ -794,7 +794,15 @@ localStorage['key'] = null // sets value to null, does not remove item
 
 localStorage.clear()
 ```
+
+## IndexedDB
+Install:
+```
+npm i dexie
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NDI1MDA2NCwtMTMxNzA4MDIyLC01OD
+eyJoaXN0b3J5IjpbMTQ5MzczNzg1MywtMTMxNzA4MDIyLC01OD
 EwNzI0NjZdfQ==
 -->
