@@ -881,9 +881,14 @@ await this.cart.put(cart)
 
 Delete
 ```ts
-
+const deleteCount = await this.cart
+	.where('name').anyOf('fred', 'barney')
+	.and(c => c.date < someDate)
+	.delete()
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjEyMDQ2MjYsLTI4NTE1MTYwNiwxND
-kzNzM3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
+eyJoaXN0b3J5IjpbMTYwOTA2MTA4LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
