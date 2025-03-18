@@ -958,8 +958,11 @@ readonly addNewTodo = this.updater<Todo>((slice: TodoSlice, todo:Todo) => ({
 ```
 
 Delete
+```ts
+readonly 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE1Nzg4MDQsLTE0NTk1NDA4MzcsLT
-M1ODYzMzc2MCwtMjg1MTUxNjA2LDE0OTM3Mzc4NTMsLTEzMTcw
-ODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTMyOTUxNjM5MSwtMTk1MTU3ODgwNCwtMT
+Q1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUxNTE2MDYsMTQ5Mzcz
+Nzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
