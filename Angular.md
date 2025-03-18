@@ -979,11 +979,15 @@ summary$: Observable<TodoSummary[]> = this.todoStore.getTodoSummaries()
 ```
 With parameters
 ```ts
-readonly getTodoByName = (name: string) => this.selec
+readonly getTodoByName = (name: string) => this.select<Todo[]>(
+	(slice: TodoSlice) => slice.todos.filter(
+		todo => name.toLowerCase() === todo.name.toLowerCase()
+	)
+)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mzc1MzYxNyw1MjM0ODMwODcsMTMzMD
-k2MTQyOSwtMTk1MTU3ODgwNCwtMTQ1OTU0MDgzNywtMzU4NjMz
-NzYwLC0yODUxNTE2MDYsMTQ5MzczNzg1MywtMTMxNzA4MDIyLC
-01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbLTEzNDYzMzQ2MzIsNTIzNDgzMDg3LDEzMz
+A5NjE0MjksLTE5NTE1Nzg4MDQsLTE0NTk1NDA4MzcsLTM1ODYz
+Mzc2MCwtMjg1MTUxNjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMi
+wtNTgxMDcyNDY2XX0=
 -->
