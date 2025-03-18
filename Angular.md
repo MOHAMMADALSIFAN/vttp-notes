@@ -1,5 +1,5 @@
 # Links
-(Forms)[# Forms]
+[Forms](# Forms)
 # Foundation Angular
 ## Commands
 
@@ -988,5 +988,5 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI4MzY2MTcyXX0=
+eyJoaXN0b3J5IjpbLTQ4OTUwNTYxOCw4MjgzNjYxNzJdfQ==
 -->
