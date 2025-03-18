@@ -1,9 +1,11 @@
 # Links
 1. [Accessing data](#accessing-data) -- access data using `@Input()` and `@Output()`
 2. [Directives](#Directives) -- using if, for, pipes etc.
-	- [Pipes](#Pipes)
 3. [Forms](#Forms)
-	- [Basic structure](#Basic-structure)
+	- [Basic structure](##Basic-structure)
+	- [Form array](#dynamic-addition-of-array)
+4. [Validation](#Validation)
+	-	[Error messages](#error-messages)
 # Foundation Angular
 ## Commands
 
@@ -992,5 +994,5 @@ readonly getTodoByName = (name: string) => this.select<Todo[]>(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc5ODE2MTVdfQ==
+eyJoaXN0b3J5IjpbMTkyODY4ODcyMSwtMTM1Nzk4MTYxNV19
 -->
