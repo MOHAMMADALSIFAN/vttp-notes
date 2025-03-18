@@ -786,9 +786,15 @@ return ResponseEntity.ok()
 localstorage.setItem(key, value)
 localstorage.getItem(key)
 
-loca
+localStorage['key'] = 'value'
+localStorage['key']
+
+localStorage.removeItem('key')
+localStorage['key'] = null // sets value to null, does not remove item
+
+localStorage.clear()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njc0MTU2NTYsLTEzMTcwODAyMiwtNT
-gxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTY3NDI1MDA2NCwtMTMxNzA4MDIyLC01OD
+EwNzI0NjZdfQ==
 -->
