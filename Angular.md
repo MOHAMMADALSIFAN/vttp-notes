@@ -863,8 +863,11 @@ this.cart.where('username').equals('fred')
 ```
 
 ### CRUD
-
+Adding
+```ts
+await th
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1ODUzMjY4LC0yODUxNTE2MDYsMTQ5Mz
+eyJoaXN0b3J5IjpbMTgxMDAyMzA2LC0yODUxNTE2MDYsMTQ5Mz
 czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
