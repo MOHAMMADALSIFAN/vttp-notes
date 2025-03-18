@@ -805,9 +805,9 @@ Database creation:
 ```ts
 import Dexie from 'dexie';
 
-
+export class MyStore extends Dexie
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTE1MTYwNiwxNDkzNzM3ODUzLC0xMz
-E3MDgwMjIsLTU4MTA3MjQ2Nl19
+eyJoaXN0b3J5IjpbLTcyODExNDA4OSwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
