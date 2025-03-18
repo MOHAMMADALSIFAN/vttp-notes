@@ -854,8 +854,12 @@ const cart: Cart = await this.cart.get(12345)
 Find documents
 ```
 this.cart.filter(c => c.date > yesterday).toArray()
+
+this.cart.where('username').equals('fred').toArray()
+
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzc1ODk5LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTE4Njg0NDA3NywtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
