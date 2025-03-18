@@ -967,11 +967,12 @@ readonly deleteTodoById = this.updater<string>(slice: TodoSlice, id: string) => 
 
 ### Selector
 ```ts
-readonly getTodoSummaries = this.select<
+readonly getTodoSummaries = this.select<TodoSummary[]
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDk2MTQyOSwtMTk1MTU3ODgwNCwtMT
-Q1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUxNTE2MDYsMTQ5Mzcz
-Nzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTczMzYzOTM3LDEzMzA5NjE0MjksLTE5NT
+E1Nzg4MDQsLTE0NTk1NDA4MzcsLTM1ODYzMzc2MCwtMjg1MTUx
+NjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX
+0=
 -->
