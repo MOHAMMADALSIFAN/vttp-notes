@@ -919,11 +919,21 @@ ng add @ngrx/component-store
 
 ## Code example
 ### Initialisation
-Initial 
+Models
 ```ts
+export interface Task { ... }
+export inteface TodoSlice {
+	todos: Todo[]
+}
+```
 
+Initial state
+```ts
+const INIT_STATE: TodoSlice {
+	todos: []
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxMzMzNTM3LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTM2MTg1NDE1MywtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
