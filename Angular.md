@@ -814,11 +814,12 @@ export class MyStore extends Dexie {
 		this.version(1).stores({
 			cart: '++cartId' // Collection name
 		})
-		this.cart = this.table('car
+		//Hold a reference of the collection
+		this.cart = this.table('cart')
 	}
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjEzMjY5LC0yODUxNTE2MDYsMTQ5Mz
+eyJoaXN0b3J5IjpbMzQyMjc5NTMyLC0yODUxNTE2MDYsMTQ5Mz
 czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
