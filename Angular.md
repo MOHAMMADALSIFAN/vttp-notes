@@ -801,8 +801,13 @@ Install:
 npm i dexie
 ```
 
+Database creation:
+```ts
+import Dexie from 'dexie';
 
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MzczNzg1MywtMTMxNzA4MDIyLC01OD
-EwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbLTI4NTE1MTYwNiwxNDkzNzM3ODUzLC0xMz
+E3MDgwMjIsLTU4MTA3MjQ2Nl19
 -->
