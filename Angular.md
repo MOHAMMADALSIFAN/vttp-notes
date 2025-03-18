@@ -950,6 +950,7 @@ export class TodoStore extends ComponentStore<TodoSlice> implements OnStoreInit 
 }
 ```
 
+### Updater
 Updater
 ```ts
 readonly addNewTodo = this.updater<Todo>((slice: TodoSlice, todo:Todo) => ({
@@ -964,7 +965,7 @@ readonly deleteTodoById = this.updater<string>(slice: TodoSlice, id: string) => 
 } as TodoSlice)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTk0OTM4NywtMTk1MTU3ODgwNCwtMT
+eyJoaXN0b3J5IjpbMTA3NzU1NDkyMSwtMTk1MTU3ODgwNCwtMT
 Q1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUxNTE2MDYsMTQ5Mzcz
 Nzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
