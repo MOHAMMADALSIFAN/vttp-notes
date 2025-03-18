@@ -902,7 +902,10 @@ export class CartService extends Dexie {
 ```
 
 # State management
+### Parts
+1. Store -- the data store. Can hold logical states
+2. Action -- instructions that are dispatched to perform CUD operations
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzYxNjg0MSwtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbNTgxNDE5NjksLTI4NTE1MTYwNiwxNDkzNz
+M3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
 -->
