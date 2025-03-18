@@ -964,8 +964,14 @@ readonly deleteTodoById = this.updater<string>(slice: TodoSlice, id: string) => 
 	todos: slice.todos.filter(todo => todo.id !== id)
 } as TodoSlice)
 ```
+
+### Selector
+```ts
+readonly getTodoSummaries = this.select<
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzU1NDkyMSwtMTk1MTU3ODgwNCwtMT
+eyJoaXN0b3J5IjpbMTMzMDk2MTQyOSwtMTk1MTU3ODgwNCwtMT
 Q1OTU0MDgzNywtMzU4NjMzNzYwLC0yODUxNTE2MDYsMTQ5Mzcz
 Nzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
