@@ -849,9 +849,13 @@ this.cart
 ```
 Find document by primary key
 ```ts
-
+const cart: Cart = await this.cart.get(12345)
+```
+Find documents
+```
+this.cart.filter(c => c.date > yesterday).toArray()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE5OTM1OTEsLTI4NTE1MTYwNiwxND
-kzNzM3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
+eyJoaXN0b3J5IjpbMTgxNzc1ODk5LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
