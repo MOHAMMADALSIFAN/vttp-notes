@@ -890,10 +890,15 @@ const deleteCount = await this.cart
 ## Example
 ```ts
 export class CartService extends Dexie {
-	
+	private cart: Dexie.Table<Cart, string>
+	onNew$ = new Subject<Cart>()
+
+	addCart(cart: Cart) {
+		this.cart.add(cart)
+			.then(() => 
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTQzMTgyMiwtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbNzY3MTY0OTU2LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
