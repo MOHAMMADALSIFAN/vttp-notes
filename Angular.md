@@ -840,7 +840,18 @@ const carts: Cart[] = this.cart
 	.offset(50).limit(50)
 	toArray()
 ```
+
+Processing one document at a time
+```ts
+this.cart
+	.orderBy('date').reverse()
+	.each(c => {...})
+```
+Find document by primary key
+```ts
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Njc1OTExMywtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbLTE3OTE5OTM1OTEsLTI4NTE1MTYwNiwxND
+kzNzM3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
 -->
