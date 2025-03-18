@@ -806,7 +806,7 @@ Database creation:
 import Dexie from 'dexie';
 
 export class MyStore extends Dexie {
-	//Table with Cart as
+	//Table with Cart as the schema, and the pk is number
 	cart: Dexie.Table<Cart, number>;
 
 	constructor() {
@@ -818,6 +818,6 @@ export class MyStore extends Dexie {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1MjYxNDYzLC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbLTkwMTg1MTExNSwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
