@@ -977,10 +977,13 @@ readonly getTodoSummaries = this.select<TodoSummary[]>((slice: TodoSlice) => sli
 
 summary$: Observable<TodoSummary[]> = this.todoStore.getTodoSummaries()
 ```
-
+With parameters
+```ts
+readonly getTodoByName = (name: string) => this.selec
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzNDgzMDg3LDEzMzA5NjE0MjksLTE5NT
-E1Nzg4MDQsLTE0NTk1NDA4MzcsLTM1ODYzMzc2MCwtMjg1MTUx
-NjA2LDE0OTM3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX
-0=
+eyJoaXN0b3J5IjpbLTI3Mzc1MzYxNyw1MjM0ODMwODcsMTMzMD
+k2MTQyOSwtMTk1MTU3ODgwNCwtMTQ1OTU0MDgzNywtMzU4NjMz
+NzYwLC0yODUxNTE2MDYsMTQ5MzczNzg1MywtMTMxNzA4MDIyLC
+01ODEwNzI0NjZdfQ==
 -->
