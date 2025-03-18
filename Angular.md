@@ -900,7 +900,9 @@ export class CartService extends Dexie {
 	}
 }
 ```
+
+# State management
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDg1NTM4MiwtMjg1MTUxNjA2LDE0OT
+eyJoaXN0b3J5IjpbLTI5NzYxNjg0MSwtMjg1MTUxNjA2LDE0OT
 M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
