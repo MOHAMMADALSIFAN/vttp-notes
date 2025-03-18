@@ -865,9 +865,15 @@ this.cart.where('username').equals('fred')
 ### CRUD
 Adding
 ```ts
-await th
+await this.cart.add(newCart)
+
+const newCarts: Cart[] = [...]
+await this.cart.bulkAdd(newCarts)
 ```
+
+Updating
+```ts
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDAyMzA2LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbLTMwOTkyMDc0NywtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
