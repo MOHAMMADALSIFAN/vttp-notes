@@ -917,7 +917,7 @@ ng add @ngrx/store
 ng add @ngrx/component-store
 ```
 
-## Code example
+## Code example -- component store
 ### Initialisation
 Models
 ```ts
@@ -944,11 +944,17 @@ export class TodoStore extends ComponentStore<TodoSlice> implements OnStoreInit 
 	}
 	
 	ngrxOnInitStore(): void {
-		this.tod
+		this.todoSvc.getAllTasks()
+			.then(todos => this.setState({todos})
 	}
 }
 ```
+
+Updater
+```ts
+readonly addNewTodo = this.updater<Todo>(
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNzgyNTkzMCwtMjg1MTUxNjA2LDE0OT
+eyJoaXN0b3J5IjpbLTM1ODYzMzc2MCwtMjg1MTUxNjA2LDE0OT
 M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
