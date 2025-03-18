@@ -905,7 +905,10 @@ export class CartService extends Dexie {
 ### Parts
 1. Store -- the data store. Can hold logical states
 2. Action -- instructions that are dispatched to perform CUD operations
+3. Reducer -- operations that change the state in the store
+4. Selector -- state queries
+5. Effects -- actions that result in side effects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNDE5NjksLTI4NTE1MTYwNiwxNDkzNz
-M3ODUzLC0xMzE3MDgwMjIsLTU4MTA3MjQ2Nl19
+eyJoaXN0b3J5IjpbOTMzMDQzMjk4LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
