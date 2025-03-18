@@ -908,7 +908,18 @@ export class CartService extends Dexie {
 3. Reducer -- operations that change the state in the store
 4. Selector -- state queries
 5. Effects -- actions that result in side effects
+
+## Install
+```
+ng add @ngrx/store
+```
+```
+ng add @ngrx/component-store
+```
+
+## Code example
+### Initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzMDQzMjk4LC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTkxNjA2OTAyMiwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
