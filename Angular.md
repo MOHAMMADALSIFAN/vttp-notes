@@ -933,7 +933,19 @@ const INIT_STATE: TodoSlice {
 	todos: []
 }
 ```
+
+Initialisation
+```ts
+@Injectable()
+export class TodoStore extends ComponentStore<TodoSlice> implements OnStoreInit {
+	constructor() {
+		super(INIT_STATE)
+	}
+	
+	
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTg1NDE1MywtMjg1MTUxNjA2LDE0OT
-M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
+eyJoaXN0b3J5IjpbNDU5MjE3Njg0LC0yODUxNTE2MDYsMTQ5Mz
+czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
 -->
