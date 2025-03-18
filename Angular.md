@@ -819,7 +819,11 @@ export class MyStore extends Dexie {
 	}
 }
 ```
+
+```
+cart: '
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyMjc5NTMyLC0yODUxNTE2MDYsMTQ5Mz
-czNzg1MywtMTMxNzA4MDIyLC01ODEwNzI0NjZdfQ==
+eyJoaXN0b3J5IjpbMTk2ODY3ODM4MSwtMjg1MTUxNjA2LDE0OT
+M3Mzc4NTMsLTEzMTcwODAyMiwtNTgxMDcyNDY2XX0=
 -->
